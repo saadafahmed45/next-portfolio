@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around items-center p-2 ">
-      <div className="logo text-3xl font-extralight">
-        <h2>Saad-Af Ahmed</h2>
+    <div className="flex justify-between px-4 lg:px-24  gap-2 items-center p-2 bg-[#EDE8DC]">
+      <div className="logo text-xl md:text-3xl font-extralight">
+        <h2>Saad-Af</h2>
       </div>
       <nav className="flex gap-4 text-xl font-extralight">
         <Link href={"/"} className="">
