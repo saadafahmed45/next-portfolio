@@ -3,6 +3,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
+import { FaSquareUpwork } from "react-icons/fa6";
 
 const HeroPage = () => {
   return (
@@ -25,14 +26,23 @@ const HeroPage = () => {
 
           {/* social button  */}
           <div className="flex justify-end gap-2 items-center pt-4 pb-8">
-            <a href="" className="text-3xl hover:text-[#3B966A]">
+            <a
+              href="https://github.com/saadafahmed45"
+              className="text-3xl hover:text-[#3B966A]"
+            >
               <FaGithub />
             </a>
-            <a href="" className="text-3xl">
+            <a
+              href="https://www.linkedin.com/in/mohammadh-/"
+              className="text-3xl hover:text-[#3B966A]"
+            >
               <FaLinkedin />
             </a>
-            <a href="" className="text-3xl">
-              <FaGithub />
+            <a
+              href="https://www.upwork.com/freelancers/~0108b0d1886edd5892?mp_source=share"
+              className="text-3xl hover:text-[#3B966A]"
+            >
+              <FaSquareUpwork />
             </a>
             <div>
               <button className="bg-slate-100 p-2 border font-extralight rounded border-[#3B966A] hover:border-slate-950 hover:bg-[#3B966A] hover:text-white">
