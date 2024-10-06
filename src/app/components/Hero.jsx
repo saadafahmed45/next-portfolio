@@ -54,7 +54,11 @@ const HeroPage = () => {
         </div>
         {/* content */}
         <div className=" w-[400px] px-4 lg:2">
-          <img src="p1.png" className="w-full  col-span-4" alt="" />
+          <img
+            src="p1.png"
+            className="w-full col-span-4 animate-upDown"
+            alt=""
+          />
         </div>
       </div>
     </div>
