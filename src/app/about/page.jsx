@@ -10,7 +10,7 @@ import SectionHeader from "../components/SectionHeader";
 export default function AboutPage() {
   return (
     <div>
-      <div className="container mx-auto px-4 py-2 lg:py-16 ">
+      <div className="container mx-auto px-6 py-8 lg:py-16 ">
         <SectionHeader headerText="About Me" />
 
         <div className="max-w-2xl mx-auto space-y-4">
@@ -26,17 +26,15 @@ export default function AboutPage() {
           </h2> */}
 
           {/* <Typewriter text="Crafting awesome web experiences!" speed={250} /> */}
-          <p className="text-2xl text-gray-700">
+          <p className="text-xl font-extralight text-gray-700">
             I’m <b> Mohammad Haolader</b>, a dedicated Frontend React Developer
             with a passion for creating dynamic and responsive web applications.
             I thrive on transforming complex problems into intuitive user
             interfaces using React
           </p>
-          <p className="text-2xl text-gray-700">
+          <p className="text-xl  font-extralight text-gray-700">
             I design and develop services for customers specializing creating
-            stylish, modern websites, web services and online stores. My passion
-            is to design digital user experiences through meaningful
-            interactions.
+            stylish, modern websites,
           </p>
         </div>
 
