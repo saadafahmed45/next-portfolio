@@ -7,14 +7,14 @@ import { FaSquareUpwork } from "react-icons/fa6";
 
 const HeroPage = () => {
   return (
-    <div className="px-2  h-screen lg:px-16 py-16 bg-[#EDE8DC]">
+    <div className="px-2   lg:px-16 py-16 bg-[#EDE8DC]">
       <div className="flex flex-col justify-around md:flex-row gap-4 items-center  ">
         {/* content */}
         <div className=" space-y-4">
           <h1 className="text-3xl md:text-5xl  ">
-            <span>Hello I'm</span> <br /> Mohammad Haolader
+            <span>Hello, I'm</span> <br /> Mohammad Haolader
           </h1>
-          <h3 className="text-xl font-semibold ml-[2px] lg:ml-[120px] ">
+          <h3 className="text-md lg:text-lg font-semibold ml-[20px] lg:ml-[120px] ">
             <ReactTyped
               className=""
               strings={[
