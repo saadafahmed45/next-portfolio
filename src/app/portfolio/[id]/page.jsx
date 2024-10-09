@@ -45,11 +45,11 @@ const PortfolioDetails = ({ params }) => {
 
             <div>
               <h3 className="text-xl font-bold">Technology Used:</h3>
-              <div className="flex flex-wrap gap-4 mb-4">
+              <div className="flex flex-wrap gap-4 my-2">
                 {project.technology.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 bg-gray-200 rounded-full text-sm"
+                    className="px-2 py-1 bg-gray-100 rounded-full text-sm"
                   >
                     {tech}
                   </span>

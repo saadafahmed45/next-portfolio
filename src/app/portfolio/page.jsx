@@ -95,7 +95,7 @@ const PortfolioPage = () => {
                 {item.technology?.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-2 py-1 bg-gray-200 rounded-full text-sm"
+                    className="px-2 py-1 bg-gray-100 rounded-full text-sm"
                   >
                     {tag}
                   </span>
