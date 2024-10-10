@@ -19,7 +19,7 @@ const HeroPage = () => {
               className=""
               strings={[
                 " As a skilled MERN Stack Developer",
-                " As a skilled Next Js  Developer",
+                " As a skilled Shopify Store Designer",
               ]}
               typeSpeed={50}
               backSpeed={50}
