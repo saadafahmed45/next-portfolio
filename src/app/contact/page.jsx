@@ -61,7 +61,7 @@ const ContactPage = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 shadow"
                     />
                   </div>
 
@@ -76,7 +76,7 @@ const ContactPage = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 shadow"
                     />
                   </div>
                 </div>
@@ -92,13 +92,13 @@ const ContactPage = () => {
                     onChange={handleChange}
                     required
                     placeholder="Message"
-                    className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56    focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 shadow"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 mt-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                  className="w-full px-6 py-3 mt-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#3B966A] rounded-md hover:bg-[#3B966A]focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                 >
                   get in touch
                 </button>
@@ -106,17 +106,11 @@ const ContactPage = () => {
             </div>
 
             <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-              <img
-                className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96"
-                src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt=""
-              />
-
               <div className="mt-6 space-y-8 md:mt-8">
                 <p className="flex items-start -mx-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mx-2 text-[#3B966A] "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -142,7 +136,7 @@ const ContactPage = () => {
                 <p className="flex items-start -mx-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mx-2 text-[#3B966A] "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -163,7 +157,7 @@ const ContactPage = () => {
                 <p className="flex items-start -mx-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mx-2 text-[#3B966A] "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -187,7 +181,7 @@ const ContactPage = () => {
 
                 <div className="flex mt-2 -mx-1.5 ">
                   <a
-                    className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-[#3B966A]"
                     href="#"
                   >
                     <svg
@@ -201,7 +195,7 @@ const ContactPage = () => {
                   </a>
 
                   <a
-                    className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-[#3B966A]"
                     href="#"
                   >
                     <svg
@@ -226,7 +220,7 @@ const ContactPage = () => {
                   </a>
 
                   <a
-                    className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-[#3B966A]"
                     href="#"
                   >
                     <svg
@@ -243,7 +237,7 @@ const ContactPage = () => {
                   </a>
 
                   <a
-                    className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5  text-gray-400 transition-colors duration-300 transform hover:text-[#3B966A]"
                     href="#"
                   >
                     <svg

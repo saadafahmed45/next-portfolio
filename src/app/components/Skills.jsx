@@ -73,6 +73,23 @@ const Skills = () => {
     },
   ];
 
+  const database = [
+    {
+      id: 1,
+      name: "MongoDB",
+      icon: "https://img.icons8.com/color/48/mongodb.png",
+    },
+    {
+      id: 2,
+      name: "MySQL",
+      icon: "https://img.icons8.com/fluency/50/mysql-logo.png",
+    },
+    {
+      id: 3,
+      name: "Graphql",
+      icon: "https://img.icons8.com/ios-filled/50/graphql.png",
+    },
+  ];
   const toolsIcon = [
     {
       id: 1,
@@ -101,40 +118,59 @@ const Skills = () => {
     },
   ];
   return (
-    <div className=" px-8 py-2 lg:py-16 mt-8 lg:px-24">
+    <div className=" px-4 py-2 lg:py-8 mt-8 lg:px-16">
       <SectionHeader headerText="Skills" />
-      <div className=" grid grid-cols-1 gap-6 lg:grid-cols-3 items-start text-center text-2xl">
+      <div className=" grid grid-cols-2 gap-4 lg:grid-cols-4 items-start text-start text-2xl">
         <div>
-          <h3 className="text-3xl font-semibold">Front-end</h3>
-          <div className="space-y-4 mt-4">
+          <h3 className="lg:text-3xl text-2xl font-semibold">Front-end:</h3>
+          <div className="space-y-2 mt-4">
             {frontEndIcon.map((item) => (
               <div key={item.id} className="flex gap-4 items-center p-2">
-                <img className="w-[50px]" src={item.icon} alt="" />
-                <span className="text-2xl font-extralight">{item.name}</span>
+                <img className="w-[30px] " src={item.icon} alt="" />
+                <span className="text-[18px] lg:text-xl font-extralight">
+                  {item.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-3xl font-semibold">Back-end</h3>
-          <div className="space-y-4 mt-4">
+          <h3 className="lg:text-3xl text-2xl font-semibold">Back-end:</h3>
+          <div className="space-y-2 mt-4">
             {BackEndIcon.map((item) => (
-              <div key={item.id} className="flex gap-4 items-center p-2">
-                <img className="w-[50px]" src={item.icon} alt="" />
-                <span className="text-2xl font-extralight">{item.name}</span>
+              <div key={item.id} className="flex gap-2 items-center p-2">
+                <img className="w-[30px]" src={item.icon} alt="" />
+                <span className="text-[18px] lg:text-xl font-extralight">
+                  {item.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-3xl font-semibold">Tools</h3>
-          <div className="space-y-4 mt-4">
+          <h3 className="lg:text-3xl text-2xl font-semibold">Database:</h3>
+          <div className="space-y-2 mt-4">
+            {database.map((item) => (
+              <div key={item.id} className="flex gap-4 items-center p-2">
+                <img className="w-[30px]" src={item.icon} alt="" />
+                <span className="text-[18px] lg:text-xl font-extralight">
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="lg:text-3xl text-2xl font-semibold">Tools:</h3>
+          <div className="space-y-2 mt-4">
             {toolsIcon.map((item) => (
               <div key={item.id} className="flex gap-4 items-center p-2">
-                <img className="w-[50px]" src={item.icon} alt="" />
-                <span className="text-2xl font-extralight">{item.name}</span>
+                <img className="w-[30px]" src={item.icon} alt="" />
+                <span className="text-[18px] lg:text-xl font-extralight">
+                  {item.name}
+                </span>
               </div>
             ))}
           </div>

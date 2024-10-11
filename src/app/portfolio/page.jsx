@@ -56,7 +56,7 @@ export const projectsData = [
 ];
 const PortfolioPage = () => {
   return (
-    <div className="px-2 py-8 lg:py-8 lg:px-4">
+    <div className="px-2 py-8 lg:py-8 lg:px-16">
       <SectionHeader headerText="Portfolio" />
       <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectsData.map((item, index) => (
