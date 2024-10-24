@@ -48,10 +48,13 @@ const HeroPage = () => {
               <FaSquareUpwork />
             </a>
             <div>
-              <button className="bg-slate-100 p-2 border font-extralight rounded border-[#3B966A] hover:border-slate-950 hover:bg-[#3B966A] hover:text-white">
+              <a
+                href="https://drive.google.com/file/d/1k7jJCwRzQzfRQDp5qLLVDtrM900j_BVV/view?usp=drive_link"
+                className="bg-slate-100 p-2 border font-extralight rounded border-[#3B966A] hover:border-slate-950 hover:bg-[#3B966A] hover:text-white"
+              >
                 {" "}
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>

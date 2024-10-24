@@ -14,7 +14,7 @@ const PortfolioDetails = ({ params }) => {
       <div className="px-2 py-8 lg:py-8 lg:px-4">
         <SectionHeader headerText="Project Not Found" />
         <p>Sorry, the project you're looking for doesn't exist.</p>
-        <Link href="/portfolio" className="text-blue-500 underline">
+        <Link href="/portfolio" className="text-[#3B966A] underline">
           Back to Portfolio
         </Link>
       </div>
@@ -57,10 +57,10 @@ const PortfolioDetails = ({ params }) => {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-[16px] lg:text-md mt-4">
               <a
                 href={project.live_link}
-                className="flex items-center text-blue-500"
+                className="flex items-center text-[#3B966A] hover:text-[#2f7553]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -68,7 +68,7 @@ const PortfolioDetails = ({ params }) => {
               </a>
               <a
                 href={project.client_link}
-                className="flex items-center text-blue-500"
+                className="flex items-center text-[#3B966A] hover:text-[#2f7553]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,7 +76,7 @@ const PortfolioDetails = ({ params }) => {
               </a>
               <a
                 href={project.server_link}
-                className="flex items-center text-blue-500"
+                className="flex items-center text-[#3B966A]"
                 target="_blank"
                 rel="noopener noreferrer"
               >

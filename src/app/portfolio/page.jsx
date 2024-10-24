@@ -48,7 +48,7 @@ export const projectsData = [
     Features:
       "Product Listings: Display products with detailed descriptions, prices, and reviews.Shopping Cart: Allows users to add items, view totals, and proceed to checkout.Payment Gateway Integration:Secure payment options including credit cards and digital wallets.User Accounts:Allows users to sign up, log in, and manage their orders.Product Search and Filters: Helps users find products quickly with filters for categories, price, and ratings.Responsive Design: Optimized for both desktop and mobile devices to enhance user experience.",
     live_link: "A full-stack online shopping solution",
-    client_link: "A full-stack online shopping solution",
+    client_link: "https://shoperina-ecommerce.vercel.app/",
     server_link: "A full-stack online shopping solution",
     image: "/projects/shoperina.jpg",
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
@@ -79,7 +79,7 @@ const PortfolioPage = () => {
               <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Link
                   href={`/portfolio/${item.id}`}
-                  className="bg-blue-500 text-white py-2 px-4 rounded"
+                  className="bg-[#3B966A] text-white py-2 px-4 rounded"
                 >
                   Project Details
                 </Link>
@@ -89,7 +89,7 @@ const PortfolioPage = () => {
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <p className="text-gray-500 mb-4">
-                Real-time financial data visualization for a fintech startup.
+                {item.description.slice(0, 80)}..
               </p>
               <div className="flex flex-wrap gap-2">
                 {item.technology?.map((tag, tagIndex) => (

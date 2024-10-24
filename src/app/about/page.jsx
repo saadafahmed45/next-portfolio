@@ -27,10 +27,10 @@ export default function AboutPage() {
 
           {/* <Typewriter text="Crafting awesome web experiences!" speed={250} /> */}
           <p className="text-xl font-extralight text-gray-700">
-            I’m <b> Mohammad Haolader</b>, a dedicated Frontend React Developer
-            with a passion for creating dynamic and responsive web applications.
-            I thrive on transforming complex problems into intuitive user
-            interfaces using React
+            I’m <b className=" text-[#3B966A]"> Mohammad Haolader</b>, a
+            dedicated Frontend React Developer with a passion for creating
+            dynamic and responsive web applications. I thrive on transforming
+            complex problems into intuitive user interfaces using React
           </p>
           <p className="text-xl  font-extralight text-gray-700">
             I design and develop services for customers specializing creating
