@@ -33,7 +33,7 @@ const PortfolioDetails = ({ params }) => {
             <img
               src={project.image}
               //   alt={project.title}
-              className="w-full h-80 object-contain mb-4"
+              className="w-full h-80 object-contain mb-4 rounded"
             />
           </div>
           {/* details  */}
@@ -41,10 +41,11 @@ const PortfolioDetails = ({ params }) => {
             <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
 
             <p className="text-gray-600 mb-4">{project.description}</p>
+            <h3 className="text-xl font-semibold mb-4">Key features:</h3>
             <p className="text-gray-600 mb-4">{project.Features}</p>
 
             <div>
-              <h3 className="text-xl font-bold">Technology Used:</h3>
+              <h3 className="text-xl font-semibold">Technology Used:</h3>
               <div className="flex flex-wrap gap-4 my-2">
                 {project.technology.map((tech, index) => (
                   <span
@@ -56,7 +57,14 @@ const PortfolioDetails = ({ params }) => {
                 ))}
               </div>
             </div>
-
+            <div>
+              {project.pass && (
+                <h3 className="text-xl font-semibold mb-4">
+                  Store Password:{" "}
+                  <span className="text-xl font-light"> {project.pass}</span>
+                </h3>
+              )}
+            </div>
             <div className="flex gap-4 text-[16px] lg:text-md mt-4">
               <a
                 href={project.live_link}
