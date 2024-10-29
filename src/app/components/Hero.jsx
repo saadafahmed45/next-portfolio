@@ -11,8 +11,8 @@ const HeroPage = () => {
       <div className="flex flex-col-reverse justify-around md:flex-row gap-4 items-center  ">
         {/* content */}
         <div className=" space-y-4">
-          <h1 className="text-3xl md:text-5xl font-semibold text-slate-900 text-center ">
-            <span>Hello, I'm</span> <br /> Mohammad Haolader
+          <h1 className="text-4xl md:text-7xl font-semibold text-slate-900 text-center ">
+            <span>Hello, I'm</span> <br /> Mohammad H.
           </h1>
           <h3 className="text-md lg:text-lg font-semibold ml-[20px] lg:ml-[120px] ">
             <ReactTyped
