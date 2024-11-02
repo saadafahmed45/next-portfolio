@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
 import SectionHeader from "../components/SectionHeader";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const projectsData = [
   {
@@ -110,12 +113,19 @@ export const projectsData = [
   },
 ];
 const PortfolioPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="px-2 py-8 lg:py-8 lg:px-16">
       <SectionHeader headerText="Portfolio" />
       <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectsData.map((item, index) => (
           <div
+            data-aos="fade-up"
             key={item.id}
             className="bg-orange-50 rounded-lg shadow-md overflow-hidden"
           >

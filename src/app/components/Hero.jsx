@@ -1,17 +1,29 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 import { FaSquareUpwork } from "react-icons/fa6";
 
 const HeroPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="px-2   lg:px-16 py-16 bg-[#EDE8DC]">
       <div className="flex flex-col-reverse justify-around md:flex-row gap-4 items-center  ">
         {/* content */}
         <div className=" space-y-4">
-          <h1 className="text-4xl md:text-7xl font-semibold text-slate-900 text-center ">
+          <h1
+            data-aos="fade-right"
+            className="text-4xl md:text-7xl font-semibold text-slate-900 text-center "
+          >
             <span>Hello, I'm</span> <br /> Mohammad H.
           </h1>
           <h3 className="text-md lg:text-lg font-semibold ml-[20px] lg:ml-[120px] ">
@@ -59,7 +71,7 @@ const HeroPage = () => {
           </div>
         </div>
         {/* content */}
-        <div className=" w-[300px] lg:w-[400px] px-4 lg:2">
+        <div data-aos="fade-left" className=" w-[300px] lg:w-[400px] px-4 lg:2">
           <img
             src="p1.png"
             className="w-full col-span-4 animate-upDown"

@@ -6,12 +6,19 @@ import Typewriter from "../components/Typewriter";
 import { ReactTyped } from "react-typed";
 import Skills from "../components/Skills";
 import SectionHeader from "../components/SectionHeader";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function AboutPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div>
       <div className="container mx-auto px-6 py-8 lg:py-16 ">
-        <SectionHeader headerText="About Me" />
+        <SectionHeader data-aos="fade-up" headerText="About Me" />
 
         <div className="max-w-2xl mx-auto space-y-4">
           {/* <h2 className="text-3xl font-semibold mb-6">
@@ -26,13 +33,19 @@ export default function AboutPage() {
           </h2> */}
 
           {/* <Typewriter text="Crafting awesome web experiences!" speed={250} /> */}
-          <p className="text-xl font-extralight text-gray-700">
+          <p
+            data-aos="fade-up"
+            className="text-xl font-extralight text-gray-700"
+          >
             I’m <b className=" text-[#3B966A]"> Mohammad Haolader</b>, a
             dedicated Frontend React Developer with a passion for creating
             dynamic and responsive web applications. I thrive on transforming
             complex problems into intuitive user interfaces using React
           </p>
-          <p className="text-xl  font-extralight text-gray-700">
+          <p
+            data-aos="fade-up"
+            className="text-xl  font-extralight text-gray-700"
+          >
             I design and develop services for customers specializing creating
             stylish, modern websites,
           </p>
