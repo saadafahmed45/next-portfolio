@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { projectsData } from "../page";
 import SectionHeader from "@/app/components/SectionHeader";
