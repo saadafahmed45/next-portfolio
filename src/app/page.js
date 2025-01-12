@@ -5,6 +5,7 @@ import CardHover from "./components/CardHover";
 import HeroPage from "./components/Hero";
 import ContactPage from "./contact/page";
 import PortfolioPage from "./portfolio/page";
+import RecentProject from "./components/RecentProject";
 export default function Home() {
   return (
     <main>
@@ -22,7 +23,8 @@ export default function Home() {
       <HeroPage />
       {/* <CardHover /> */}
       <AboutPage />
-      <PortfolioPage />
+      <RecentProject />
+      {/* <PortfolioPage /> */}
       <ContactPage />
     </main>
   );

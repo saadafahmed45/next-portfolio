@@ -45,7 +45,7 @@ const FullScreenNavbar = () => {
     <nav className="relative z-50 px-2 lg:px-16">
       <div className=" top-0 left-0 right-0 bg-transparent  p-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-3xl font-extralight text-gray-950">
+          <Link href={'/'} className="text-3xl font-extralight text-gray-950">
             MH
           </Link>
           <motion.button
@@ -89,13 +89,13 @@ const FullScreenNavbar = () => {
                   exit="closed"
                   transition={{ delay: index * 0.1 }}
                 >
-                  <a
+                  <Link
                     href={item.href}
                     className="text-3xl hover:text-gray-200 transition-colors duration-300 block"
                     onClick={toggleMenu}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </motion.ul>

@@ -37,17 +37,20 @@ export default function AboutPage() {
             data-aos="fade-up"
             className="text-xl font-extralight text-gray-700"
           >
-            I’m <b className=" text-[#3B966A]"> Mohammad Haolader</b>, a
-            dedicated Frontend React Developer with a passion for creating
-            dynamic and responsive web applications. I thrive on transforming
-            complex problems into intuitive user interfaces using React
+            I’m <b className=" text-[#3B966A]"> Mohammad Haolader</b>, a skilled Frontend Developer with expertise in MERN stack and Shopify development.
           </p>
           <p
             data-aos="fade-up"
             className="text-xl  font-extralight text-gray-700"
           >
-            I design and develop services for customers specializing creating
-            stylish, modern websites,
+            I specialize in building dynamic, responsive web applications and eCommerce platforms that deliver seamless user experiences. With a passion for transforming complex challenges into intuitive solutions, I craft stylish, modern websites tailored to client needs—whether it’s creating robust web applications using React and the MERN stack or designing scalable Shopify stores for eCommerce success
+          </p>
+          <p
+            data-aos="fade-up"
+            className="text-xl  font-extralight text-gray-700"
+          >
+            Let’s bring your vision to life with innovative and impactful digital solutions!
+
           </p>
         </div>
 
