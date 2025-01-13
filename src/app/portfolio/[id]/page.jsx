@@ -4,10 +4,11 @@ import { projectsData } from "../page";
 import SectionHeader from "@/app/components/SectionHeader";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
+import { portfolioData } from "@/app/api/portfolioData";
 
 const PortfolioDetails = ({ params }) => {
   const { id } = params; // Get the dynamic id from the URL
-  const project = projectsData.find((project) => project.id === parseInt(id)); // Find project by id
+  const project = portfolioData.find((project) => project.id === parseInt(id)); // Find project by id
 
   // If the project is not found, show a message
   if (!project) {
@@ -23,9 +24,26 @@ const PortfolioDetails = ({ params }) => {
   }
 
   return (
-    <div className="px-2 py-8 lg:py-8 lg:px-4">
+    <div className="px-2 py-8 lg:py-8 lg:px-16">
       <SectionHeader headerText="Project Details" />
+      <nav aria-label="breadcrumb" className="w-full p-4">
+        <ol className="flex h-8 space-x-2">
+          <li className="flex items-center">
+            <Link href={'/'} title="Back to homepage" className="hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 pr-1 dark:text-gray-600">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+            </Link>
+          </li>
+          <li className="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor" className="w-2 h-2 mt-1 transform rotate-90 fill-current dark:text-gray-400">
+              <path d="M32 30.031h-32l16-28.061z"></path>
+            </svg>
+            <a rel="noopener noreferrer" href="#" className="flex items-center px-1 capitalize hover:underline">Portfolio</a>
+          </li>
 
+        </ol>
+      </nav>
       {/* Project Details */}
       <div className="container mx-auto px-4">
         <div className="grid grid-row-1 lg:grid-cols-2 gap-4">
@@ -34,7 +52,7 @@ const PortfolioDetails = ({ params }) => {
             <img
               src={project.image}
               //   alt={project.title}
-              className="w-full h-80 object-contain mb-4 rounded"
+              className="w-full h-96 object-contain mb-4 rounded-md"
             />
           </div>
           {/* details  */}
