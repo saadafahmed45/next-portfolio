@@ -55,7 +55,8 @@ const FullScreenNavbar = () => {
             whileTap={{ scale: 0.9 }}
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
-            {isOpen ? <X size={34} /> : <SquareMenu size={34} />}
+            <SquareMenu size={34} />
+            {/* {isOpen ? <X size={34} /> : <SquareMenu size={34} />} */}
           </motion.button>
         </div>
       </div>
@@ -76,7 +77,7 @@ const FullScreenNavbar = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="Close menu"
             >
-              <X size={24} />
+              <X size={34} />
             </motion.button>
             <motion.ul className="text-center">
               {menuItems.map((item, index) => (
@@ -91,7 +92,7 @@ const FullScreenNavbar = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-3xl hover:text-gray-200 transition-colors duration-300 block"
+                    className="text-3xl hover:text-gray-400 hover:font-semibold transition-colors duration-200 block"
                     onClick={toggleMenu}
                   >
                     {item.label}

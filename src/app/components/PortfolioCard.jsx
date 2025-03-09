@@ -46,7 +46,8 @@ const PortfolioCard = ({ data }) => {
                             </span>
                         ))}
                     </div>
-                    {/* button  */} <div className="flex gap-4 text-[16px] lg:text-[14px] mt-4">
+                    {/* button  */}
+                    <div className="flex gap-4 text-[16px] lg:text-[14px] mt-4">
                         <a
                             href={data.live_link}
                             className="flex items-center text-red-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"

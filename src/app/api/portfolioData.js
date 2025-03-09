@@ -11,6 +11,7 @@ export const portfolioData = [
     server_link: "https://github.com/saadafahmed45/ira-fashion-server",
     image: "/projects/ira_fasion.jpg",
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const portfolioData = [
     server_link: "https://github.com/saadafahmed45/hotel-relex-servern",
     image: "/projects/hotel_relex.jpg",
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ export const portfolioData = [
     server_link: "A full-stack online shopping solution",
     image: "/projects/photo_plex.jpg",
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ export const portfolioData = [
     server_link: "A full-stack online shopping solution",
     image: "/projects/shoperina.jpg",
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
   },
   {
     id: 5,
@@ -74,6 +78,7 @@ export const portfolioData = [
     image: "/projects/maysha_ecom.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
+    teckStack: "Shopify",
   },
   {
     id: 7,
@@ -88,6 +93,7 @@ export const portfolioData = [
     image: "/projects/esens_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
+    teckStack: "Shopify",
   },
   {
     id: 8,
@@ -102,5 +108,6 @@ export const portfolioData = [
     image: "/projects/webaid_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
+    teckStack: "Shopify",
   },
 ];

@@ -39,7 +39,8 @@ const PortfolioDetails = ({ params }) => {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" fill="currentColor" className="w-2 h-2 mt-1 transform rotate-90 fill-current dark:text-gray-400">
               <path d="M32 30.031h-32l16-28.061z"></path>
             </svg>
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-1 capitalize hover:underline">Portfolio</a>
+            <Link href={'/portfolio'} rel="noopener noreferrer" className="flex items-center px-1 capitalize hover:underline">Portfolio
+            </Link>
           </li>
 
         </ol>
@@ -80,34 +81,34 @@ const PortfolioDetails = ({ params }) => {
               {project.pass && (
                 <h3 className="text-xl font-semibold mb-4">
                   Store Password:{" "}
-                  <span className="text-xl font-light"> {project.pass}</span>
+                  <span className="text-xl font-light text-red-600"> {project.pass}</span>
                 </h3>
               )}
             </div>
-            <div className="flex gap-4 text-[16px] lg:text-md mt-4">
+            <div className="flex gap-4 text-[16px] lg:text-[14px] mt-4">
               <a
                 href={project.live_link}
-                className="flex items-center text-[#3B966A] hover:text-[#2f7553]"
+                className="flex items-center text-red-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ExternalLink className="mr-2" /> Live Site
+                <ExternalLink className="mr-1" /> Live Site
               </a>
               <a
                 href={project.client_link}
-                className="flex items-center text-[#3B966A] hover:text-[#2f7553]"
+                className="flex items-center text-blue-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github className="mr-2" /> Client Repo
+                <Github className="mr-1" /> Client Repo
               </a>
               <a
                 href={project.server_link}
-                className="flex items-center text-[#3B966A]"
+                className="flex items-center text-[#3B966A] hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github className="mr-2" /> Server Repo
+                <Github className="mr-1" /> Server Repo
               </a>
             </div>
           </div>

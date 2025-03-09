@@ -120,7 +120,7 @@ const Skills = () => {
         {allSkills.map((item) => (
           <div
             key={item.id}
-            className="bg-[rgba(255,255,255,0.29)] rounded-[16px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[3.6px] border border-[rgba(255,255,255,0.07)]"
+            className="bg-[rgba(255,255,255,0.29)] rounded-[16px] shadow-[0_1px_15px_rgba(0,0,0,0.1)] backdrop-blur-[3.6px] border border-[rgba(255,255,255,0.07)]"
           >
             <div className="flex gap-4 items-center p-2">
               <img className="w-[30px]" src={item.icon} alt={item.name} />

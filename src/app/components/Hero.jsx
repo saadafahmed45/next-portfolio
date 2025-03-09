@@ -71,7 +71,7 @@ const HeroPage = () => {
           </div>
         </div>
         {/* content */}
-        <div data-aos="fade-left" className=" w-[300px] lg:w-[400px] px-4 lg:2">
+        <div data-aos="fade-left" className=" w-[300px] lg:w-[430px] px-4 lg:2">
           <img
             src="p1.png"
             className="w-full col-span-4 animate-upDown"
