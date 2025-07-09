@@ -155,4 +155,20 @@ export const portfolioData = [
     technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
     teckStack: "webflow",
   },
+
+  {
+    id: 12,
+    title: "Burkiyaan Store",
+    description:
+      "A bespoke perfume eCommerce platform designed to deliver an immersive fragrance shopping experience. This Shopify site features a sleek, user-friendly interface that allows customers to browse and explore a curated selection of high-quality perfumes, each crafted to captivate the senses. With optimized product pages, intuitive filtering options, and engaging visuals, Essence Reverie enhances the discovery process, helping customers find their perfect scent. Integrated with secure payment gateways and responsive across devices, the website ensures seamless transactions and provides a delightful shopping experience. Tailored to reflect the elegance of the brand, the site’s aesthetic captures the luxurious essence of premium perfumes.",
+    Features:
+      "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
+    live_link: "https://burkiyaan.myshopify.com/",
+    // client_link: "https://essence-reverie.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
+    image: "/projects/s2.webp",
+    pass: "demo",
+    technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
+    teckStack: "Shopify",
+  },
 ];
