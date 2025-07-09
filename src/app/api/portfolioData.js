@@ -73,8 +73,8 @@ export const portfolioData = [
     Features:
       "Scalable Architecture: Ensures smooth performance as the user base grows.Optimized Routing: Enhances loading speed and overall user experience.SEO Friendly: Server-side rendering improves visibility on search engines. This application is ideal for businesses looking to streamline their recruitment processes and for job seekers eager to find their next opportunity.",
     live_link: "https://maysha-elegance-fashion.myshopify.com/",
-    client_link: "https://maysha-elegance-fashion.myshopify.com/",
-    server_link: "A full-stack online shopping solution",
+    // client_link: "https://maysha-elegance-fashion.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
     image: "/projects/maysha_ecom.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
@@ -88,8 +88,8 @@ export const portfolioData = [
     Features:
       "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
     live_link: "https://essence-reverie.myshopify.com/",
-    client_link: "https://essence-reverie.myshopify.com/",
-    server_link: "A full-stack online shopping solution",
+    // client_link: "https://essence-reverie.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
     image: "/projects/esens_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
@@ -103,11 +103,56 @@ export const portfolioData = [
     Features:
       "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
     live_link: "https://webaidshop.myshopify.com/",
-    client_link: "https://webaidshop.myshopify.com/",
-    server_link: "A full-stack online shopping solution",
+    // client_link: "https://webaidshop.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
     image: "/projects/webaid_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
     teckStack: "Shopify",
+  },
+
+  {
+    id: 9,
+    title: "Biccas",
+    description:
+      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
+    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+    live_link: "https://agency-site-5eaa4d.webflow.io/",
+    // client_link: "https://webaidshop.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
+    image: "/projects/w2.webp",
+    pass: "demo",
+    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    teckStack: "webflow",
+  },
+
+  {
+    id: 10,
+    title: "Nexcent",
+    description:
+      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
+    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+    live_link: "https://mohammads-portfolio-site-40a900.webflow.io/",
+    // client_link: "https://webaidshop.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
+    image: "/projects/w3.webp",
+    pass: "demo",
+    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    teckStack: "webflow",
+  },
+
+  {
+    id: 11,
+    title: "Trilehibe",
+    description:
+      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
+    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+    live_link: "https://saas-portfolio-site.webflow.io/",
+    // client_link: "https://webaidshop.myshopify.com/",
+    // server_link: "A full-stack online shopping solution",
+    image: "/projects/w4.webp",
+    pass: "demo",
+    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    teckStack: "webflow",
   },
 ];

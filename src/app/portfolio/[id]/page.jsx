@@ -49,12 +49,79 @@ const PortfolioDetails = ({ params }) => {
       <div className="container mx-auto px-4">
         <div className="grid grid-row-1 lg:grid-cols-2 gap-4">
           {/* img  */}
-          <div>
+          <div className="image__sectionHere">
             <img
               src={project.image}
               //   alt={project.title}
-              className="w-full h-96 object-contain mb-4 rounded-md"
+              className="w-full  object-contain mb-4 rounded-md bg-red-500"
             />
+
+            {/* here  teckStack sex  */}
+            <div className=" about_short px-2 md:px-4">
+
+              <div className="">
+                <h3 className="text-xl font-semibold">Technology Used:</h3>
+                <div className="flex flex-wrap gap-4 my-2">
+                  {project.technology.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 bg-gray-100 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* this is pass sec start  */}
+              <div>
+                {project.pass && (
+                  <h3 className="text-xl font-semibold mb-4">
+                    Store Password:{" "}
+                    <span className="text-xl font-light text-red-600"> {project.pass}</span>
+                  </h3>
+                )}
+              </div>
+              {/* this is link btnn sec   */}
+
+              <div className="flex gap-4 text-[16px] lg:text-[14px] mt-4">
+                <a
+                  href={project.live_link}
+                  className="flex items-center text-red-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="mr-1" /> Live Site
+                </a>
+                {/* this is the place in client side viwew btn  */}
+                {
+                  project.client_link && (
+                    <a
+                      href={project.client_link}
+                      className="flex items-center text-blue-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-1" /> Client Repo
+                    </a>
+                  )
+                }
+
+                {
+                  project.server_link && (
+                    <a
+                      href={project.server_link}
+                      className="flex items-center text-[#3B966A] hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-1" /> Server Repo
+                    </a>
+                  )
+                }
+
+              </div>
+            </div>
+            {/* end */}
           </div>
           {/* details  */}
           <div>
@@ -64,53 +131,9 @@ const PortfolioDetails = ({ params }) => {
             <h3 className="text-xl font-semibold mb-4">Key features:</h3>
             <p className="text-gray-600 mb-4">{project.Features}</p>
 
-            <div>
-              <h3 className="text-xl font-semibold">Technology Used:</h3>
-              <div className="flex flex-wrap gap-4 my-2">
-                {project.technology.map((tech, index) => (
-                  <span
-                    key={index}
-                    className="px-2 py-1 bg-gray-100 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              {project.pass && (
-                <h3 className="text-xl font-semibold mb-4">
-                  Store Password:{" "}
-                  <span className="text-xl font-light text-red-600"> {project.pass}</span>
-                </h3>
-              )}
-            </div>
-            <div className="flex gap-4 text-[16px] lg:text-[14px] mt-4">
-              <a
-                href={project.live_link}
-                className="flex items-center text-red-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ExternalLink className="mr-1" /> Live Site
-              </a>
-              <a
-                href={project.client_link}
-                className="flex items-center text-blue-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-1" /> Client Repo
-              </a>
-              <a
-                href={project.server_link}
-                className="flex items-center text-[#3B966A] hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-1" /> Server Repo
-              </a>
-            </div>
+
+
+
           </div>
         </div>
       </div>
