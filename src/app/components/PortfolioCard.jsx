@@ -13,7 +13,7 @@ const PortfolioCard = ({ data }) => {
                     {/* Image */}
                     <img
                         src={data.image}
-                        className="w-full h-48 object-cover"
+                        className="w-full object-cover"
                         alt={data.title}
                     />
 

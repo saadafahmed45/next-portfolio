@@ -22,9 +22,9 @@ const HeroPage = () => {
         <div className=" space-y-4">
           <h1
             data-aos="fade-right"
-            className="text-4xl md:text-7xl font-semibold text-slate-900 text-center "
+            className="text-4xl md:text-7xl font-semibold text-[#3B966A] text-center "
           >
-            <span>Hello, I'm</span> <br /> Mohammad H.
+            <span className="text-slate-900">Hello, I'm</span> <br /> Mohammad H.
           </h1>
           <h3 className="text-md lg:text-lg font-semibold ml-[20px] lg:ml-[120px] ">
             <ReactTyped
@@ -71,7 +71,7 @@ const HeroPage = () => {
           </div>
         </div>
         {/* content */}
-        <div data-aos="fade-left" className=" w-[300px] lg:w-[430px] px-4 lg:2">
+        <div data-aos="fade-left" className=" w-[300px] lg:w-[450px] px-4 lg:2">
           <img
             src="p1.png"
             className="w-full col-span-4 animate-upDown"
