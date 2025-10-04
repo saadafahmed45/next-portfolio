@@ -17,14 +17,15 @@ const HeroPage = () => {
   }, []);
   return (
     <div className="px-2   lg:px-16 py-16 bg-[#EDE8DC]">
-      <div className="flex flex-col-reverse justify-around md:flex-row gap-4 items-center  ">
+      <div className="flex flex-col-reverse justify-around md:flex-row gap-4 items-center h-[80vh] ">
         {/* content */}
         <div className=" space-y-4">
           <h1
             data-aos="fade-right"
             className="text-4xl md:text-7xl font-semibold text-[#3B966A] text-center "
           >
-            <span className="text-slate-900">Hello, I'm</span> <br /> Mohammad H.
+            <span className="text-slate-900">Hello, I'm</span> <br /> Mohammad
+            H.
           </h1>
           <h3 className="text-md lg:text-lg font-semibold ml-[20px] lg:ml-[120px] ">
             <ReactTyped
