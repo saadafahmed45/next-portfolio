@@ -1,30 +1,39 @@
 "use client";
+
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import AboutPage from "./about/page";
-import CardHover from "./components/CardHover";
 import HeroPage from "./components/Hero";
 import ContactPage from "./contact/page";
-import PortfolioPage from "./portfolio/page";
 import RecentProject from "./components/RecentProject";
+import Skills from "./components/Skills";
+
 export default function Home() {
   return (
     <main>
+      {/* WhatsApp Floating Button */}
       <FloatingWhatsApp
         phoneNumber="+8801890195058"
         accountName="Mohammad Haolader"
-        // avatar="/path/to/avatar.png" // Optional: You can add your custom avatar image
-        chatMessage="Hello there! How can we assist you today?" // Default message
+        chatMessage="Hello there! How can we assist you today?"
         statusMessage="Typically replies within 1 hour"
         placeholder="Type your message here..."
-        // allowClickAway // Close chat when clicking outside
-        notification // Show a notification bubble
-        notificationSound // Play a sound for notifications
+        notification
+        notificationSound
       />
+
+      {/* Hero Section */}
       <HeroPage />
-      {/* <CardHover /> */}
+
+      {/* About Section */}
       <AboutPage />
+
+      {/* Skills Section */}
+      <Skills />
+
+      {/* Recent Projects */}
       <RecentProject />
-      {/* <PortfolioPage /> */}
+
+      {/* Contact Section */}
       <ContactPage />
     </main>
   );

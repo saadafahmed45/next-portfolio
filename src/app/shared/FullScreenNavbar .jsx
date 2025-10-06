@@ -42,10 +42,10 @@ const FullScreenNavbar = () => {
   };
 
   return (
-    <nav className="relative z-50 px-2 lg:px-16">
+    <nav className="relative z-50 px-2 lg:px-24">
       <div className=" top-0 left-0 right-0 bg-transparent  p-4">
         <div className="flex justify-between items-center">
-          <Link href={'/'} className="text-3xl font-extralight text-gray-950">
+          <Link href={"/"} className="text-3xl font-extralight text-gray-950">
             MH
           </Link>
           <motion.button
@@ -72,7 +72,7 @@ const FullScreenNavbar = () => {
           >
             <motion.button
               onClick={toggleMenu}
-              className="absolute px-2 lg:px-16 top-4 right-4 text-white hover:text-gray-200"
+              className="absolute px-2 lg:px-24 top-4 right-4 text-white hover:text-gray-200"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Close menu"
