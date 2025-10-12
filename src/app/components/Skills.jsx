@@ -37,8 +37,8 @@ const skillsData = [
   { name: "JavaScript", icon: <FaJsSquare className="text-yellow-500" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400" /> },
   { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
-  { name: "Framer Motion", icon: <SiFramer className="text-pink-500" /> },
-  { name: "Redux", icon: <FaReact className="text-blue-500" /> },
+  // { name: "Framer Motion", icon: <SiFramer className="text-pink-500" /> },
+  // { name: "Redux", icon: <FaReact className="text-blue-500" /> },
 
   // Backend
   { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
@@ -48,10 +48,10 @@ const skillsData = [
 
   // Database
   { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
-  { name: "Prisma", icon: <SiPrisma className="text-blue-500" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
+  // { name: "Prisma", icon: <SiPrisma className="text-blue-500" /> },
+  // { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-800" /> },
   { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
-  { name: "GraphQL", icon: <SiGraphql className="text-pink-500" /> },
+  // { name: "GraphQL", icon: <SiGraphql className="text-pink-500" /> },
   { name: "Database", icon: <FaDatabase className="text-orange-500" /> },
 
   // Tools & Design
@@ -68,7 +68,7 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <SectionHeader data-aos="fade-up" headerText="My Skills" />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-11 gap-8 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 gap-8 mt-12">
           {skillsData.map((skill, index) => (
             <div
               key={index}
