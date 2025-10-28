@@ -43,8 +43,11 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdf6e3] flex justify-center items-center px-4 lg:px-16 py-12">
-      <section className="w-full max-w-6xl bg-white rounded-3xl shadow-2xl p-8 lg:p-16 flex flex-col lg:flex-row gap-12">
+    <div
+      id="contact"
+      className=" min-h-screen bg-[#fdf6e3] flex justify-center items-center px-4 lg:px-16 py-12"
+    >
+      <section className="w-full max-w-6xl bg-orange-50 rounded-3xl shadow-2xl p-8 lg:p-16 flex flex-col lg:flex-row gap-12">
         {/* Contact Form */}
         <div className="lg:w-1/2">
           <h1 className="text-4xl font-bold text-gray-800 mb-3">

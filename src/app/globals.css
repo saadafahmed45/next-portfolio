@@ -5,11 +5,13 @@
 body {
   background-color: #ede8dc;
 }
+
 .fadeIn {
   display: inline-block;
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
 }
+
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -19,11 +21,42 @@ body {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
+}
+
+
+.primary_bg_color {
+  background: #fdf6e3;
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 80px; */
 }

@@ -16,7 +16,7 @@ const HeroPage = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#EDE8DC] px-4 lg:px-20 py-20">
+    <section className="relative primary_bg_color px-4 lg:px-20 py-20">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl  mx-auto">
         {/* ---------- LEFT CONTENT ---------- */}
         <div className="flex-1 space-y-6 text-center lg:text-left">

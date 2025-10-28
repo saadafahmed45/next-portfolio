@@ -17,7 +17,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <main className="bg-[#fdf6e3] text-gray-800">
+    <main className="bg-[#fdf6e3] text-gray-800" id="about">
       <div className="container mx-auto px-6 py-8 lg:py-24">
         {/* --- Page Level Heading (H1) --- */}
         <SectionHeader data-aos="fade-up" headerText="About Me" />

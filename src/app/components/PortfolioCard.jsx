@@ -34,7 +34,7 @@ const PortfolioCard = ({ data }) => {
         <div className="p-6">
           <h3 className="text-xl font-bold mb-2">{data.title}</h3>
           <p className="text-gray-500 mb-4">
-            {data.description.slice(0, 80)}..
+            {data.description?.slice(0, 120)}..
           </p>
           <div className="flex flex-wrap gap-2">
             {data.technology?.map((tag, tagIndex) => (

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, SquareMenu, X } from "lucide-react";
+import { SquareMenu, X } from "lucide-react";
 import Link from "next/link";
 
 const FullScreenNavbar = () => {
@@ -11,9 +11,9 @@ const FullScreenNavbar = () => {
 
   const menuItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/portfolio", label: "portfolio" },
-    { href: "/contact", label: "Contact" },
+    { href: "#about", label: "About" },
+    { href: "/portfolio", label: "Portfolio" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const menuVariants = {
@@ -42,25 +42,40 @@ const FullScreenNavbar = () => {
   };
 
   return (
-    <nav className="relative z-50 px-2 lg:px-24">
-      <div className=" top-0 left-0 right-0 bg-transparent  p-4">
-        <div className="flex justify-between items-center">
-          <Link href={"/"} className="text-3xl font-extralight text-gray-950">
-            MH
-          </Link>
-          <motion.button
-            onClick={toggleMenu}
-            className="text-gray-600 hover:text-gray-900"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            <SquareMenu size={34} />
-            {/* {isOpen ? <X size={34} /> : <SquareMenu size={34} />} */}
-          </motion.button>
-        </div>
+    <nav className="relative z-50 px-4 lg:px-24 py-4 primary_bg_color">
+      <div className="flex justify-between items-center">
+        {/* Left Side Logo */}
+        <Link href="/" className="text-3xl font-extralight text-gray-950">
+          MH
+        </Link>
+
+        {/* Center Menu (Visible only on desktop) */}
+        <ul className="hidden md:flex space-x-10 text-gray-800 font-medium">
+          {menuItems.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className="hover:text-gray-600 transition-colors duration-200"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Right Side Mobile Menu Button */}
+        <motion.button
+          onClick={toggleMenu}
+          className="md:hidden text-gray-600 hover:text-gray-900"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
+          <SquareMenu size={34} />
+        </motion.button>
       </div>
 
+      {/* Fullscreen Overlay for Mobile */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -72,13 +87,14 @@ const FullScreenNavbar = () => {
           >
             <motion.button
               onClick={toggleMenu}
-              className="absolute px-2 lg:px-24 top-4 right-4 text-white hover:text-gray-200"
+              className="absolute top-6 right-6 text-white hover:text-gray-200"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Close menu"
             >
               <X size={34} />
             </motion.button>
+
             <motion.ul className="text-center">
               {menuItems.map((item, index) => (
                 <motion.li
@@ -92,7 +108,7 @@ const FullScreenNavbar = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-3xl hover:text-gray-400 hover:font-semibold transition-colors duration-200 block"
+                    className="text-3xl hover:text-gray-400 transition-colors duration-200 block"
                     onClick={toggleMenu}
                   >
                     {item.label}
