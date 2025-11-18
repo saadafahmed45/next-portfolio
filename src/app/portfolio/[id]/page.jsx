@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import SectionHeader from "@/app/components/SectionHeader";
 import { portfolioData } from "@/app/api/portfolioData";
+import PortfolioCard from "@/app/components/PortfolioCard";
 
 const PortfolioDetails = ({ params }) => {
   const { id } = params;
@@ -25,6 +26,12 @@ const PortfolioDetails = ({ params }) => {
       </div>
     );
   }
+
+  const relatedProjects = portfolioData
+    .filter(
+      (item) => item.id !== project.id && item.teckStack === project.teckStack
+    )
+    .slice(0, 4);
 
   return (
     <div className="px-4 py-12 lg:px-16 lg:py-16">
@@ -61,16 +68,25 @@ const PortfolioDetails = ({ params }) => {
 
       {/* Main Content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Image & Tech */}
+        {/* Image */}
         <div>
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-auto object-cover rounded-xl shadow-lg mb-6"
           />
+        </div>
 
-          {/* Technology Stack */}
-          <div className="mb-4">
+        {/* Details */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
+          <p className="text-gray-700 mb-4">{project.description}</p>
+
+          <h3 className="text-2xl font-semibold mb-2">Key Features:</h3>
+          <p className="text-gray-700">{project.Features}</p>
+
+          {/* Technology */}
+          <div className="mt-4">
             <h3 className="text-xl font-semibold mb-2">Technology Used:</h3>
             <div className="flex flex-wrap gap-2">
               {project.technology.map((tech, index) => (
@@ -86,7 +102,7 @@ const PortfolioDetails = ({ params }) => {
 
           {/* Store Password */}
           {project.pass && (
-            <div className="mb-4">
+            <div className="mt-4">
               <h3 className="text-xl font-semibold">
                 Store Password:{" "}
                 <span className="font-medium text-red-600">{project.pass}</span>
@@ -95,11 +111,10 @@ const PortfolioDetails = ({ params }) => {
           )}
 
           {/* Links */}
-          <div className="flex flex-wrap gap-4 mt-4">
+          <div className="flex flex-wrap gap-4 mt-6">
             <a
               href={project.live_link}
               target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center gap-1 px-4 py-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 transition"
             >
               <ExternalLink /> Live Site
@@ -109,7 +124,6 @@ const PortfolioDetails = ({ params }) => {
               <a
                 href={project.client_link}
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center gap-1 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition"
               >
                 <Github /> Client Repo
@@ -120,7 +134,6 @@ const PortfolioDetails = ({ params }) => {
               <a
                 href={project.server_link}
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center gap-1 px-4 py-2 bg-teal-50 text-teal-600 rounded-lg hover:bg-teal-100 transition"
               >
                 <Github /> Server Repo
@@ -128,15 +141,26 @@ const PortfolioDetails = ({ params }) => {
             )}
           </div>
         </div>
+      </div>
 
-        {/* Project Details */}
-        <div>
-          <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
-          <p className="text-gray-700 mb-4">{project.description}</p>
-
-          <h3 className="text-2xl font-semibold mb-2">Key Features:</h3>
-          <p className="text-gray-700">{project.Features}</p>
+      {/* Related Projects */}
+      <div className="mt-20">
+        <div className="flex gap-4 items-center mb-6">
+          <h3 className="text-2xl font-serif font-bold">Related Projects</h3>
+          <span className="text-lg uppercase text-gray-600">
+            ({project.teckStack})
+          </span>
         </div>
+
+        {relatedProjects.length === 0 ? (
+          <p className="text-gray-500">No related projects found.</p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {relatedProjects.map((proj) => (
+              <PortfolioCard key={proj.id} data={proj} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

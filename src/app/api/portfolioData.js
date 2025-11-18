@@ -188,4 +188,20 @@ At Softiven, we specialize in delivering user-friendly software like websites an
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
+
+  {
+    id: 14,
+    title: "Cafeno – Modern Coffee Shop Website",
+    description: `Cafeno is a complete coffee shop website designed with Next.js, Tailwind CSS, and Framer Motion. It includes a dynamic menu, category filtering, elegant animations, and mobile-friendly responsiveness—perfect for showcasing café products and branding.`,
+    Features: `Cafeno offers a modern and responsive coffee shop website with a clean user interface, smooth animations, and dynamic menu filtering. Built with Next.js and Tailwind CSS, it ensures fast performance, reusable components, and an overall seamless browsing experience for users.`,
+    live_link: "https://caffeeno-shop.vercel.app/",
+    client_link: "https://github.com/saadafahmed45/caffeeno-shop",
+    // server_link: "A full-stack online shopping solution",
+    image:
+      "https://images.pexels.com/photos/15965021/pexels-photo-15965021.jpeg",
+
+    // pass: "demo",
+    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
+  },
 ];
