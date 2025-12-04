@@ -204,4 +204,24 @@ At Softiven, we specialize in delivering user-friendly software like websites an
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
+  {
+    id: 15,
+    title: "SkinAura — Skincare eCommerce (Next.js + Tailwind)",
+    description: `A modern, responsive skincare storefront built with Next.js (App Router), React, and Tailwind CSS. Ships with a local product API (/app/api/skinData.js) containing curated skincare items (cleansers, serums, creams, sunscreens, K-Beauty, etc.), category pages, and premium product cards.`,
+    Features: `
+Local products data (skincareProducts) ready for development and demos
+Dynamic product pages (/product/[id] or /product/[slug])
+Category pages (/category/[slug]) with breadcrumb navigation
+Premium product cards with hover effects, badges, ratings, and Add-to-Cart UI
+Responsive layout (mobile → desktop) using Tailwind CSS
+Easy to extend: add products, categories, filters, or cart logic (Context API)`,
+    live_link: "https://skin-aura-shop.vercel.app/",
+    client_link: "https://github.com/saadafahmed45/SkinAura-Ecommerce",
+    // server_link: "A full-stack online shopping solution",
+    image: "https://images.pexels.com/photos/9219004/pexels-photo-9219004.jpeg",
+
+    // pass: "demo",
+    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
+  },
 ];
