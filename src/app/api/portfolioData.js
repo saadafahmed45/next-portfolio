@@ -224,4 +224,24 @@ Easy to extend: add products, categories, filters, or cart logic (Context API)`,
     technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
+{
+  id: 16,
+  title: "Kicks — eCommerce (Next.js + Tailwind)",
+  description:
+    "A modern, responsive eCommerce storefront built with Next.js (App Router), React, and Tailwind CSS. Features curated clothing products, dynamic routing, category pages, and premium product cards.",
+  features: [
+    "Local skincareProducts data",
+    "Dynamic product pages (/product/[id])",
+    "Category pages with breadcrumbs",
+    "Premium product cards with hover effects",
+    "Responsive layout with Tailwind CSS",
+    "Easy extension with cart logic & backend"
+  ],
+  live_link: "https://kicks-ecom-task.vercel.app/",
+  client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
+  image: "https://images.pexels.com/photos/3768602/pexels-photo-3768602.jpeg",
+  technology: ["Next.js", "React", "Tailwind CSS", "Firebase", ],
+    teckStack: "react",
+
+}
 ];
