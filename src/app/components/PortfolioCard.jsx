@@ -56,7 +56,9 @@ const PortfolioCard = ({ data }) => {
             >
               <ExternalLink className="mr-1" /> Live Site
             </a>
-            <a
+           {
+            data.client_link && (
+               <a
               href={data.client_link}
               className="flex items-center text-blue-600 hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
               target="_blank"
@@ -64,7 +66,11 @@ const PortfolioCard = ({ data }) => {
             >
               <Github className="mr-1" /> Client Repo
             </a>
-            <a
+            )
+           }
+           {
+            data.server_link && (
+               <a
               href={data.server_link}
               className="flex items-center text-[#3B966A] hover:text-gray-700 hover:shadow-lg p-1 rounded-md"
               target="_blank"
@@ -72,6 +78,8 @@ const PortfolioCard = ({ data }) => {
             >
               <Github className="mr-1" /> Server Repo
             </a>
+            )
+           }
           </div>
         </div>
       </div>

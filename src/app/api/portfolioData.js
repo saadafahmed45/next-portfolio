@@ -243,5 +243,88 @@ Easy to extend: add products, categories, filters, or cart logic (Context API)`,
   technology: ["Next.js", "React", "Tailwind CSS", "Firebase", ],
     teckStack: "react",
 
+},
+{
+  id: 17,
+  title: "Daily Needs by Ira — Shopify Skincare Store",
+  description:
+    "A skincare eCommerce website built with Shopify featuring clean UI, responsive layout, product collections, and secure checkout system.",
+  features: [
+    "Shopify-based storefront",
+    "Product collections and detail pages",
+    "Responsive design",
+    "Secure checkout integration",
+    "Easy product management"
+  ],
+  image: "https://images.pexels.com/photos/7038233/pexels-photo-7038233.jpeg",
+
+  live_link: "https://daily-needs-by-ira.myshopify.com/",
+  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+    teckStack: "Shopify",
+
+},
+{
+  id: 18,
+  title: "Shoper-baba — Shopify theme ",
+  description:
+    `Built a fully customizable Shopify theme “Shoper-Baba” using Liquid, HTML, CSS, and JavaScript, product filtering, cart functionality, responsive layouts, and performance optimization.`,
+  features: [
+    "Shopify-based storefront",
+    "Product collections and detail pages",
+    "Responsive design",
+    "Secure checkout integration",
+    "Easy product management"
+  ],
+  image: "https://images.pexels.com/photos/7679473/pexels-photo-7679473.jpeg",
+
+  live_link: "https://shoper-baba-store.myshopify.com/",
+  client_link: "https://github.com/saadafahmed45/shoper-baba-store",
+  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+    teckStack: "Shopify",
+
+},
+{
+  id: 19,
+  title: "Ever Shop — Shopify theme ",
+  description:
+    `Developed a custom Shopify theme and an eCommerce store with responsive design, dynamic product 
+pages, and optimized cart/ checkout experience using Liquid, HTML, CSS, and JavaScript`,
+  features: [
+    "Shopify-based storefront",
+    "Product collections and detail pages",
+    "Responsive design",
+    "Secure checkout integration",
+    "Easy product management"
+  ],
+  image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg",
+
+  live_link: "https://ever-shop-bd.myshopify.com",
+  client_link: "https://github.com/saadafahmed45/ever-shop-theme",
+
+  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+    teckStack: "Shopify",
+
+},
+{
+  id: 20,
+  title: "Techx Shop — Shopify theme ",
+  description:
+    `Developed a custom Shopify theme and an eCommerce store with responsive design, dynamic product 
+pages, and optimized cart/ checkout experience using Liquid, HTML, CSS, and JavaScript`,
+  features: [
+    "Shopify-based storefront",
+    "Product collections and detail pages",
+    "Responsive design",
+    "Secure checkout integration",
+    "Easy product management"
+  ],
+  image: "https://images.pexels.com/photos/6407773/pexels-photo-6407773.jpeg",
+
+  live_link: "https://techx-shop-bd.myshopify.com",
+  client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
+
+  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+    teckStack: "Shopify",
+
 }
 ];
