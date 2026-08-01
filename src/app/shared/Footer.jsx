@@ -1,48 +1,54 @@
 import React from "react";
-import { FaReddit, FaFacebookF, FaGithub } from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-[#fdf6e3] text-gray-800">
-      <div className="container mx-auto flex flex-col items-center justify-between p-6 space-y-4 sm:space-y-0 sm:flex-row">
-        {/* Logo / Branding */}
-        <div className="logo text-xl md:text-3xl font-extralight">
-          <h2 className="sr-only">Mohammad Haolader</h2>
-          <span>MH</span>
-        </div>
+    <footer className="bg-[#fdf6e3] border-t border-gray-200">
+      <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-extralight text-slate-900 hover:text-[#3B966A] transition-colors">
+          MH
+        </Link>
 
         {/* Copyright */}
-        <p className="text-sm text-gray-600">
-          © Copyright 2021. All Rights Reserved.
+        <p className="text-sm text-slate-500 text-center">
+          © {currentYear}{" "}
+          <span className="font-medium text-slate-700">Mohammad Haolader</span>
+          . All rights reserved.
         </p>
 
         {/* Social Links */}
-        <div className="flex -mx-2">
-          {/* Reddit */}
+        <div className="flex items-center gap-4">
           <a
-            href="#"
-            aria-label="Visit Reddit profile"
-            className="mx-2 text-gray-600 hover:text-red-500 transition-colors duration-300"
-          >
-            <FaReddit className="w-5 h-5" />
-          </a>
-
-          {/* Facebook */}
-          <a
-            href="#"
-            aria-label="Visit Facebook profile"
-            className="mx-2 text-gray-600 hover:text-blue-600 transition-colors duration-300"
-          >
-            <FaFacebookF className="w-5 h-5" />
-          </a>
-
-          {/* GitHub */}
-          <a
-            href="#"
-            aria-label="Visit GitHub profile"
-            className="mx-2 text-gray-600 hover:text-gray-900 transition-colors duration-300"
+            href="https://github.com/saadafahmed45"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="text-slate-500 hover:text-[#3B966A] transition-colors duration-200 hover:scale-110 inline-block"
           >
             <FaGithub className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammadh-/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-slate-500 hover:text-[#3B966A] transition-colors duration-200 hover:scale-110 inline-block"
+          >
+            <FaLinkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/~0108b0d1886edd5892?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Upwork"
+            className="text-slate-500 hover:text-[#3B966A] transition-colors duration-200 hover:scale-110 inline-block"
+          >
+            <FaSquareUpwork className="w-5 h-5" />
           </a>
         </div>
       </div>

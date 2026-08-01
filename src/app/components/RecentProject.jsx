@@ -1,5 +1,4 @@
 "use client";
-import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -7,30 +6,40 @@ import "aos/dist/aos.css";
 import SectionHeader from "./SectionHeader";
 import { portfolioData } from "../api/portfolioData";
 import PortfolioCard from "./PortfolioCard";
+import { ArrowRight } from "lucide-react";
 
 const RecentProject = () => {
-  const allProducts = portfolioData;
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
-  const newProducts = allProducts.slice(-3).reverse();
+  // Last 3 projects (most recently added)
+  const recentProjects = portfolioData.slice(-3).reverse();
 
   return (
-    <div className="px-2 py-8 lg:py-24 lg:px-16">
-      <SectionHeader headerText="Recent Project" />
+    <section className="bg-[#fdf6e3] px-4 py-16 lg:py-24 lg:px-16">
+      <SectionHeader headerText="Recent Projects" />
 
-      <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {newProducts.map((data, index) => (
-          <PortfolioCard data={data} key={data.id} />
+      <div
+        className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        {recentProjects.map((data, index) => (
+          <div key={data.id} data-aos="fade-up" data-aos-delay={index * 100}>
+            <PortfolioCard data={data} />
+          </div>
         ))}
       </div>
-      <div className="text-center mt-6">
+
+      <div className="text-center mt-12">
         <Link
-          href={"/portfolio"}
-          className="px-4 py-2 font-semibold border rounded border-gray-800 text-gray-800"
+          href="/portfolio"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-[#3B966A] text-white font-semibold rounded-full shadow-md hover:bg-[#2d7554] hover:shadow-lg hover:scale-105 transition-all duration-200 text-sm"
         >
-          See all project
+          View All Projects
+          <ArrowRight size={16} />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

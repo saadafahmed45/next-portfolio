@@ -1,80 +1,112 @@
 export const portfolioData = [
   {
     id: 1,
-    title: "Ira Fasion",
+    title: "Ira Fashion",
     description:
-      "This project involves building a comprehensive eCommerce platform designed to offer users a seamless shopping experience. The website features product listings, shopping carts, payment integration, and user account management. The focus is on scalability, security, and user-friendliness.",
-    Features:
-      "Product Listings: Display products with detailed descriptions, prices, and reviews.Shopping Cart: Allows users to add items, view totals, and proceed to checkout.Payment Gateway Integration:Secure payment options including credit cards and digital wallets.User Accounts:Allows users to sign up, log in, and manage their orders.Product Search and Filters: Helps users find products quickly with filters for categories, price, and ratings.Responsive Design: Optimized for both desktop and mobile devices to enhance user experience.",
+      "A comprehensive eCommerce platform designed to offer users a seamless shopping experience. The website features product listings, shopping carts, payment integration, and user account management with a focus on scalability, security, and user-friendliness.",
+    features: [
+      "Product Listings with detailed descriptions, prices, and reviews",
+      "Shopping Cart: add items, view totals, and proceed to checkout",
+      "Payment Gateway Integration with credit cards and digital wallets",
+      "User Accounts: sign up, log in, and manage orders",
+      "Product Search and Filters by categories, price, and ratings",
+      "Fully responsive design for desktop and mobile",
+    ],
     live_link: "https://ira-fashion.vercel.app/",
     client_link: "https://github.com/saadafahmed45/ira-fashion-clients",
     server_link: "https://github.com/saadafahmed45/ira-fashion-server",
     image: "/projects/ira_fasion.jpg",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
   {
     id: 2,
     title: "Hotel Relex",
     description:
-      "Hotel Relex is a fully functional hotel booking platform that allows users to search for hotels, view details, book rooms, and make payments online. The site was built with a focus on user experience and backend integration, ensuring a smooth and secure booking process.",
-    Features:
-      "Hotel Search Functionality: Users can search for hotels by location, check-in and check-out dates, and number of guests.Room Availability: Displays available rooms with pricing and details.Booking System: Users can book rooms directly through the website.Payment Gateway Integration: Secure online payment options, including credit cards and digital wallets.User Accounts: Option for users to create accounts, view booking history, and manage reservations.Responsive Design: Mobile-friendly and optimized for different devices.",
+      "A fully functional hotel booking platform that allows users to search for hotels, view details, book rooms, and make payments online. Built with a focus on user experience and backend integration, ensuring a smooth and secure booking process.",
+    features: [
+      "Hotel Search by location, check-in/check-out dates, and number of guests",
+      "Room Availability display with pricing and details",
+      "Booking System for direct room reservations",
+      "Payment Gateway Integration with secure online payment options",
+      "User Accounts to view booking history and manage reservations",
+      "Fully responsive and mobile-friendly design",
+    ],
     live_link: "https://hotel-relex.vercel.app/",
     client_link: "https://github.com/saadafahmed45/hotel-relex-client",
     server_link: "https://github.com/saadafahmed45/hotel-relex-servern",
     image: "/projects/hotel_relex.jpg",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
   {
     id: 3,
     title: "Photo Plex",
-    description: "A full-stack online shopping solution",
+    description:
+      "A full-stack photography eCommerce solution where users can browse, purchase, and download high-quality photos. Features a clean gallery layout, secure payments, and user account management.",
+    features: [
+      "Photo gallery with category browsing",
+      "Secure purchase and download system",
+      "User account and order management",
+      "Responsive design for all devices",
+    ],
     live_link: "https://photo-plex.vercel.app/",
     client_link: "https://github.com/saadafahmed45/photo-plex-client",
-    server_link: "A full-stack online shopping solution",
     image: "/projects/photo_plex.jpg",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
   {
     id: 4,
     title: "Shoperina",
     description:
-      "A full-stack online eCommerce platform designed to offer users a seamless shopping experience. The website features product listings, shopping carts, payment integration, and user account management. The focus is on scalability, security, and user-friendliness.",
-    Features:
-      "Product Listings: Display products with detailed descriptions, prices, and reviews.Shopping Cart: Allows users to add items, view totals, and proceed to checkout.Payment Gateway Integration:Secure payment options including credit cards and digital wallets.User Accounts:Allows users to sign up, log in, and manage their orders.Product Search and Filters: Helps users find products quickly with filters for categories, price, and ratings.Responsive Design: Optimized for both desktop and mobile devices to enhance user experience.",
+      "A full-stack online eCommerce platform designed to offer users a seamless shopping experience. The website features product listings, shopping carts, payment integration, and user account management with a focus on scalability and user-friendliness.",
+    features: [
+      "Product Listings with descriptions, prices, and reviews",
+      "Shopping Cart with add-to-cart, totals, and checkout flow",
+      "Secure Payment Gateway Integration",
+      "User Accounts for sign-up, login, and order management",
+      "Product Search and Filters by categories, price, and ratings",
+      "Fully responsive for desktop and mobile",
+    ],
     live_link: "https://shoperina-ecommerce.vercel.app/",
     client_link: "https://github.com/saadafahmed45/shoperina-ecommerce",
-    server_link: "A full-stack online shopping solution",
     image: "/projects/shoperina.jpg",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
   {
     id: 5,
     title: "Dhaka Job Portal",
     description:
-      "This job portal is developed using Next.js for a seamless front-end experience, paired with Express.js and MongoDB for fast and efficient data handling. The platform connects job seekers with employers through an intuitive interface, offering essential features such as:",
-    Features:
-      "Scalable Architecture: Ensures smooth performance as the user base grows.Optimized Routing: Enhances loading speed and overall user experience.SEO Friendly: Server-side rendering improves visibility on search engines. This application is ideal for businesses looking to streamline their recruitment processes and for job seekers eager to find their next opportunity.",
+      "A job portal developed using Next.js for a seamless front-end experience, paired with Express.js and MongoDB for fast and efficient data handling. The platform connects job seekers with employers through an intuitive interface.",
+    features: [
+      "Scalable Architecture for smooth performance as user base grows",
+      "Optimized Routing for fast loading and great UX",
+      "SEO Friendly via server-side rendering",
+      "Job listings with search and filter by category and location",
+      "Employer dashboard for posting and managing jobs",
+      "Job seeker profiles with application tracking",
+    ],
     live_link: "https://dhaka-jobs.vercel.app/",
     client_link: "https://github.com/saadafahmed45/dhaka-jobs-portal",
-    server_link: "A full-stack online shopping solution",
     image: "/projects/job_portal.jpg",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
+    teckStack: "react",
   },
   {
     id: 6,
     title: "Maysha Elegance",
     description:
-      "an innovative Shopify eCommerce store designed to offer a premium shoe shopping experience. SoleStyle features an extensive collection of shoes for every occasion, from casual wear to high-performance athletic shoes. The store's modern, user-friendly layout makes it easy for customers to find the perfect fit, style, and comfort level they’re seeking",
-    Features:
-      "Scalable Architecture: Ensures smooth performance as the user base grows.Optimized Routing: Enhances loading speed and overall user experience.SEO Friendly: Server-side rendering improves visibility on search engines. This application is ideal for businesses looking to streamline their recruitment processes and for job seekers eager to find their next opportunity.",
+      "An innovative Shopify eCommerce store designed to offer a premium shoe shopping experience. Features an extensive collection of shoes for every occasion with a modern, user-friendly layout that makes it easy to find the perfect fit.",
+    features: [
+      "Scalable Shopify Architecture for smooth performance",
+      "Optimized product pages with high-quality visuals",
+      "SEO-friendly structure for improved search engine visibility",
+      "Mobile-responsive layout across all devices",
+      "Custom Liquid theme with brand-consistent styling",
+    ],
     live_link: "https://maysha-elegance-fashion.myshopify.com/",
-    // client_link: "https://maysha-elegance-fashion.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/maysha_ecom.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
@@ -84,12 +116,16 @@ export const portfolioData = [
     id: 7,
     title: "Essence Reverie",
     description:
-      "A bespoke perfume eCommerce platform designed to deliver an immersive fragrance shopping experience. This Shopify site features a sleek, user-friendly interface that allows customers to browse and explore a curated selection of high-quality perfumes, each crafted to captivate the senses. With optimized product pages, intuitive filtering options, and engaging visuals, Essence Reverie enhances the discovery process, helping customers find their perfect scent. Integrated with secure payment gateways and responsive across devices, the website ensures seamless transactions and provides a delightful shopping experience. Tailored to reflect the elegance of the brand, the site’s aesthetic captures the luxurious essence of premium perfumes.",
-    Features:
-      "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
+      "A bespoke perfume eCommerce platform designed to deliver an immersive fragrance shopping experience. Features a sleek interface with optimized product pages, intuitive filtering, and engaging visuals integrated with secure payment gateways.",
+    features: [
+      "Personalized Fragrance Recommendations based on customer preferences",
+      "Detailed Scent Profiles with top, middle, and base notes",
+      "Scent Finder Quiz to help customers find their ideal fragrance",
+      "High-Quality Visuals and videos showcasing products and packaging",
+      "Wishlist Feature to save favorite products for future purchases",
+      "Loyalty Program with points-based rewards for customers",
+    ],
     live_link: "https://essence-reverie.myshopify.com/",
-    // client_link: "https://essence-reverie.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/esens_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
@@ -99,232 +135,280 @@ export const portfolioData = [
     id: 8,
     title: "Web Aid Shop",
     description:
-      "A bespoke perfume eCommerce platform designed to deliver an immersive fragrance shopping experience. This Shopify site features a sleek, user-friendly interface that allows customers to browse and explore a curated selection of high-quality perfumes, each crafted to captivate the senses. With optimized product pages, intuitive filtering options, and engaging visuals, Essence Reverie enhances the discovery process, helping customers find their perfect scent. Integrated with secure payment gateways and responsive across devices, the website ensures seamless transactions and provides a delightful shopping experience. Tailored to reflect the elegance of the brand, the site’s aesthetic captures the luxurious essence of premium perfumes.",
-    Features:
-      "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
+      "A Shopify eCommerce store with a clean, user-friendly interface allowing customers to browse and explore a curated product selection. Integrated with secure payment gateways and optimized across devices for seamless transactions.",
+    features: [
+      "Clean and intuitive storefront design",
+      "Optimized product pages with filtering options",
+      "Secure Checkout with multiple payment options",
+      "Mobile Optimization for smooth experience on all devices",
+      "Customer Reviews and social sharing integration",
+      "Promotions and Discounts with automated seasonal offers",
+    ],
     live_link: "https://webaidshop.myshopify.com/",
-    // client_link: "https://webaidshop.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/webaid_shop.jpg",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
     teckStack: "Shopify",
   },
-
   {
     id: 9,
     title: "Biccas",
     description:
-      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
-    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+      "A modern SaaS landing page designed and developed using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design for a fictional cloud-based productivity software platform.",
+    features: [
+      "Fully responsive design for mobile, tablet, and desktop",
+      "Clean, modern UI with strategic call-to-actions (CTAs)",
+      "Built-in Webflow CMS for blog and customer testimonials",
+      "Smooth scroll-based animations and hover interactions",
+      "SEO-optimized structure and performance-optimized assets",
+      "Custom components built using Webflow's native no-code tools",
+    ],
     live_link: "https://agency-site-5eaa4d.webflow.io/",
-    // client_link: "https://webaidshop.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/w2.webp",
-    pass: "demo",
-    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    technology: ["Webflow", "HTML", "CSS", "JavaScript"],
     teckStack: "webflow",
   },
-
   {
     id: 10,
     title: "Nexcent",
     description:
-      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
-    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+      "A modern SaaS landing page designed and developed in Webflow, showcasing a fully responsive interface for a fictional software platform offering cloud-based productivity solutions with smooth interactions and high-conversion design.",
+    features: [
+      "Fully responsive design for mobile, tablet, and desktop",
+      "Clean, modern UI with strategic call-to-actions (CTAs)",
+      "Built-in Webflow CMS for blog and customer testimonials",
+      "Smooth scroll-based animations and hover interactions",
+      "SEO-optimized structure and performance-optimized assets",
+      "Custom components built using Webflow's native no-code tools",
+    ],
     live_link: "https://mohammads-portfolio-site-40a900.webflow.io/",
-    // client_link: "https://webaidshop.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/w3.webp",
-    pass: "demo",
-    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    technology: ["Webflow", "HTML", "CSS", "JavaScript"],
     teckStack: "webflow",
   },
-
   {
     id: 11,
     title: "Trilehibe",
     description:
-      "I designed and developed a modern SaaS landing page using Webflow, focusing on high-conversion layout, smooth interactions, and a clean, responsive design. This project showcases a fully responsive interface built for a fictional software platform offering cloud-based productivity solution",
-    Features: `Fully responsive design optimized for mobile, tablet, and desktop Clean, modern UI with strategic call-to-actions (CTAs) Built-in Webflow CMS for blog or customer testimonials Smooth scroll-based animations and hover interactions SEO-optimized structure and performance-optimized assets Custom components built using Webflow’s native tools (no-code)"`,
+      "A modern SaaS landing page designed and developed in Webflow with a focus on high-conversion layout, smooth interactions, and a clean responsive design for a cloud-based productivity platform.",
+    features: [
+      "Fully responsive design for mobile, tablet, and desktop",
+      "Clean, modern UI with strategic call-to-actions (CTAs)",
+      "Built-in Webflow CMS for blog and customer testimonials",
+      "Smooth scroll-based animations and hover interactions",
+      "SEO-optimized structure and performance-optimized assets",
+      "Custom components built using Webflow's native no-code tools",
+    ],
     live_link: "https://saas-portfolio-site.webflow.io/",
-    // client_link: "https://webaidshop.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/w4.webp",
-    pass: "demo",
-    technology: ["Webflow Design", "HTML", "CSS", "Javascript"],
+    technology: ["Webflow", "HTML", "CSS", "JavaScript"],
     teckStack: "webflow",
   },
-
   {
     id: 12,
     title: "Burkiyaan Store",
     description:
-      "A bespoke perfume eCommerce platform designed to deliver an immersive fragrance shopping experience. This Shopify site features a sleek, user-friendly interface that allows customers to browse and explore a curated selection of high-quality perfumes, each crafted to captivate the senses. With optimized product pages, intuitive filtering options, and engaging visuals, Essence Reverie enhances the discovery process, helping customers find their perfect scent. Integrated with secure payment gateways and responsive across devices, the website ensures seamless transactions and provides a delightful shopping experience. Tailored to reflect the elegance of the brand, the site’s aesthetic captures the luxurious essence of premium perfumes.",
-    Features:
-      "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
+      "A Shopify eCommerce store built for a premium fashion brand, featuring a sleek interface with optimized product pages, intuitive filtering options, and engaging visuals. Integrated with secure payment gateways and fully responsive.",
+    features: [
+      "Personalized product recommendations",
+      "High-Quality Visuals showcasing products and packaging",
+      "Customer Reviews with authentic buyer feedback",
+      "Wishlist Feature to save favorite products",
+      "Secure Checkout with multiple safe payment options",
+      "Mobile-optimized experience across all devices",
+    ],
     live_link: "https://burkiyaan.myshopify.com/",
-    // client_link: "https://essence-reverie.myshopify.com/",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/s2.webp",
     pass: "demo",
     technology: ["Shopify", "Liquid", "HTML", "CSS", "Tailwind CSS"],
     teckStack: "Shopify",
   },
-
   {
     id: 13,
-    title: "Softiven - Software agancy",
-    description: `Software Solutions to Boost Your Business
-At Softiven, we specialize in delivering user-friendly software like websites and mobile apps that help your business grow. Our expert team offers custom web development services using platforms like React, Next.js, Shopify, WordPress, Wix, and Webflow, ensuring you get a powerful, responsive website that drives conversions, enhances customer engagement, and strengthens your digital presence. This Shopify site features a sleek, user-friendly interface that allows customers to browse and explore a curated selection of high-quality perfumes, each crafted to captivate the senses. With optimized product pages, intuitive filtering options, and engaging visuals, Essence Reverie enhances the discovery process, helping customers find their perfect scent. Integrated with secure payment gateways and responsive across devices, the website ensures seamless transactions and provides a delightful shopping experience. Tailored to reflect the elegance of the brand, the site’s aesthetic captures the luxurious essence of premium perfumes.`,
-    Features:
-      "Personalized Recommendations: Fragrance suggestions based on customer preferences.Detailed Scent Profiles: Descriptions of top, middle, and base notes for each perfume.Scent Finder Quiz: Interactive quiz to help customers find their ideal fragrance.High-Quality Visuals: Images and videos showcasing the products and packaging.Customer Reviews: Authentic feedback from other buyers.Wishlist Feature: Save favorite products for future purchases.Sample Box Subscription: Monthly sample options for scent discovery.Promotions & Discounts: Automated seasonal offers and bundle deals.Social Sharing: Easy sharing on social media for increased reachLoyalty Program: Points-based rewards for loyal customersSecure Checkout: Multiple, safe payment options.Mobile Optimization: Smooth experience on all devices.",
+    title: "Softiven — Software Agency",
+    description:
+      "A software agency website showcasing custom web development services using React, Next.js, Shopify, and Webflow. Built to drive conversions, enhance customer engagement, and strengthen digital presence for businesses.",
+    features: [
+      "Service showcase with clear value propositions",
+      "Portfolio section highlighting past work",
+      "Responsive and SEO-optimized design",
+      "Contact and lead generation forms",
+      "Fast performance with Next.js and Tailwind CSS",
+      "Firebase-powered backend for dynamic content",
+    ],
     live_link: "https://softiven-agancy.vercel.app/",
     client_link: "https://github.com/saadafahmed45/softiven-agancy-client",
-    // server_link: "A full-stack online shopping solution",
     image: "/projects/softiven.jpg",
-
-    // pass: "demo",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
     teckStack: "react",
   },
-
   {
     id: 14,
-    title: "Cafeno – Modern Coffee Shop Website",
-    description: `Cafeno is a complete coffee shop website designed with Next.js, Tailwind CSS, and Framer Motion. It includes a dynamic menu, category filtering, elegant animations, and mobile-friendly responsiveness—perfect for showcasing café products and branding.`,
-    Features: `Cafeno offers a modern and responsive coffee shop website with a clean user interface, smooth animations, and dynamic menu filtering. Built with Next.js and Tailwind CSS, it ensures fast performance, reusable components, and an overall seamless browsing experience for users.`,
+    title: "Cafeno — Modern Coffee Shop Website",
+    description:
+      "A complete coffee shop website designed with Next.js, Tailwind CSS, and Framer Motion. Features a dynamic menu, category filtering, elegant animations, and mobile-friendly responsiveness — perfect for showcasing café products and branding.",
+    features: [
+      "Dynamic menu with category filtering",
+      "Smooth Framer Motion animations and transitions",
+      "Modern, elegant UI with brand-consistent styling",
+      "Fully responsive for mobile and desktop",
+      "Reusable component architecture with Next.js",
+      "Fast performance and SEO-optimized structure",
+    ],
     live_link: "https://caffeeno-shop.vercel.app/",
     client_link: "https://github.com/saadafahmed45/caffeeno-shop",
-    // server_link: "A full-stack online shopping solution",
-    image:
-      "https://images.pexels.com/photos/15965021/pexels-photo-15965021.jpeg",
-
-    // pass: "demo",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    image: "https://images.pexels.com/photos/15965021/pexels-photo-15965021.jpeg",
+    technology: ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
     teckStack: "react",
   },
   {
     id: 15,
-    title: "SkinAura — Skincare eCommerce (Next.js + Tailwind)",
-    description: `A modern, responsive skincare storefront built with Next.js (App Router), React, and Tailwind CSS. Ships with a local product API (/app/api/skinData.js) containing curated skincare items (cleansers, serums, creams, sunscreens, K-Beauty, etc.), category pages, and premium product cards.`,
-    Features: `
-Local products data (skincareProducts) ready for development and demos
-Dynamic product pages (/product/[id] or /product/[slug])
-Category pages (/category/[slug]) with breadcrumb navigation
-Premium product cards with hover effects, badges, ratings, and Add-to-Cart UI
-Responsive layout (mobile → desktop) using Tailwind CSS
-Easy to extend: add products, categories, filters, or cart logic (Context API)`,
+    title: "SkinAura — Skincare eCommerce",
+    description:
+      "A modern, responsive skincare storefront built with Next.js (App Router), React, and Tailwind CSS. Includes curated skincare items (cleansers, serums, creams, sunscreens, K-Beauty), category pages, and premium product cards.",
+    features: [
+      "Local product data ready for development and demos",
+      "Dynamic product pages with /product/[id] routing",
+      "Category pages with breadcrumb navigation",
+      "Premium product cards with hover effects, badges, and ratings",
+      "Responsive layout from mobile to desktop using Tailwind CSS",
+      "Easy to extend with cart logic (Context API) and backend",
+    ],
     live_link: "https://skin-aura-shop.vercel.app/",
     client_link: "https://github.com/saadafahmed45/SkinAura-Ecommerce",
-    // server_link: "A full-stack online shopping solution",
     image: "https://images.pexels.com/photos/9219004/pexels-photo-9219004.jpeg",
-
-    // pass: "demo",
-    technology: ["Next js", "tailwind", "firebase", "Node.js", "MongoDB"],
+    technology: ["Next.js", "Tailwind CSS", "React", "Firebase"],
     teckStack: "react",
   },
-{
-  id: 16,
-  title: "Kicks — eCommerce (Next.js + Tailwind)",
-  description:
-    "A modern, responsive eCommerce storefront built with Next.js (App Router), React, and Tailwind CSS. Features curated clothing products, dynamic routing, category pages, and premium product cards.",
-  features: [
-    "Local skincareProducts data",
-    "Dynamic product pages (/product/[id])",
-    "Category pages with breadcrumbs",
-    "Premium product cards with hover effects",
-    "Responsive layout with Tailwind CSS",
-    "Easy extension with cart logic & backend"
-  ],
-  live_link: "https://kicks-ecom-task.vercel.app/",
-  client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
-  image: "https://images.pexels.com/photos/3768602/pexels-photo-3768602.jpeg",
-  technology: ["Next.js", "React", "Tailwind CSS", "Firebase", ],
+  {
+    id: 16,
+    title: "Kicks — Sneaker eCommerce",
+    description:
+      "A modern, responsive sneaker eCommerce storefront built with Next.js (App Router), React, and Tailwind CSS. Features curated products, dynamic routing, category pages, and premium product cards.",
+    features: [
+      "Curated sneaker product catalog",
+      "Dynamic product pages with /product/[id] routing",
+      "Category pages with breadcrumb navigation",
+      "Premium product cards with hover effects and animations",
+      "Responsive layout with Tailwind CSS",
+      "Extensible architecture for cart logic and backend integration",
+    ],
+    live_link: "https://kicks-ecom-task.vercel.app/",
+    client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
+    image: "https://images.pexels.com/photos/3768602/pexels-photo-3768602.jpeg",
+    technology: ["Next.js", "React", "Tailwind CSS", "Firebase"],
     teckStack: "react",
-
-},
-{
-  id: 17,
-  title: "Daily Needs by Ira — Shopify Skincare Store",
-  description:
-    "A skincare eCommerce website built with Shopify featuring clean UI, responsive layout, product collections, and secure checkout system.",
-  features: [
-    "Shopify-based storefront",
-    "Product collections and detail pages",
-    "Responsive design",
-    "Secure checkout integration",
-    "Easy product management"
-  ],
-  image: "https://images.pexels.com/photos/7038233/pexels-photo-7038233.jpeg",
-
-  live_link: "https://daily-needs-by-ira.myshopify.com/",
-  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 17,
+    title: "Daily Needs by Ira — Shopify Store",
+    description:
+      "A skincare eCommerce website built with Shopify featuring a clean UI, responsive layout, product collections, and a secure checkout system for daily skincare essentials.",
+    features: [
+      "Shopify-based storefront with custom theming",
+      "Product collections and detailed product pages",
+      "Fully responsive design across all devices",
+      "Secure checkout integration",
+      "Easy product and inventory management",
+    ],
+    live_link: "https://daily-needs-by-ira.myshopify.com/",
+    image: "https://images.pexels.com/photos/7038233/pexels-photo-7038233.jpeg",
+    technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     teckStack: "Shopify",
-
-},
-{
-  id: 18,
-  title: "Shoper-baba — Shopify theme ",
-  description:
-    `Built a fully customizable Shopify theme “Shoper-Baba” using Liquid, HTML, CSS, and JavaScript, product filtering, cart functionality, responsive layouts, and performance optimization.`,
-  features: [
-    "Shopify-based storefront",
-    "Product collections and detail pages",
-    "Responsive design",
-    "Secure checkout integration",
-    "Easy product management"
-  ],
-  image: "https://images.pexels.com/photos/7679473/pexels-photo-7679473.jpeg",
-
-  live_link: "https://shoper-baba-store.myshopify.com/",
-  client_link: "https://github.com/saadafahmed45/shoper-baba-store",
-  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 18,
+    title: "Shoper-Baba — Shopify Theme",
+    description:
+      "A fully customizable Shopify theme built using Liquid, HTML, CSS, and JavaScript. Features product filtering, cart functionality, responsive layouts, and performance optimization.",
+    features: [
+      "Custom Shopify Liquid theme from scratch",
+      "Product collections and detailed product pages",
+      "Advanced product filtering and sorting",
+      "Cart functionality with seamless checkout",
+      "Responsive design optimized for all devices",
+      "Performance-optimized assets and structure",
+    ],
+    live_link: "https://shoper-baba-store.myshopify.com/",
+    client_link: "https://github.com/saadafahmed45/shoper-baba-store",
+    image: "https://images.pexels.com/photos/7679473/pexels-photo-7679473.jpeg",
+    technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     teckStack: "Shopify",
-
-},
-{
-  id: 19,
-  title: "Ever Shop — Shopify theme ",
-  description:
-    `Developed a custom Shopify theme and an eCommerce store with responsive design, dynamic product 
-pages, and optimized cart/ checkout experience using Liquid, HTML, CSS, and JavaScript`,
-  features: [
-    "Shopify-based storefront",
-    "Product collections and detail pages",
-    "Responsive design",
-    "Secure checkout integration",
-    "Easy product management"
-  ],
-  image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg",
-
-  live_link: "https://ever-shop-bd.myshopify.com",
-  client_link: "https://github.com/saadafahmed45/ever-shop-theme",
-
-  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 19,
+    title: "Ever Shop — Shopify Theme",
+    description:
+      "A custom Shopify theme and eCommerce store with responsive design, dynamic product pages, and an optimized cart/checkout experience built using Liquid, HTML, CSS, and JavaScript.",
+    features: [
+      "Custom Shopify Liquid theme development",
+      "Dynamic product pages with variant selectors",
+      "Optimized cart and checkout experience",
+      "Fully responsive across mobile and desktop",
+      "Secure checkout integration",
+      "Clean, modern UI with brand consistency",
+    ],
+    live_link: "https://ever-shop-bd.myshopify.com",
+    client_link: "https://github.com/saadafahmed45/ever-shop-theme",
+    image: "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg",
+    technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     teckStack: "Shopify",
-
-},
-{
-  id: 20,
-  title: "Techx Shop — Shopify theme ",
-  description:
-    `Developed a custom Shopify theme and an eCommerce store with responsive design, dynamic product 
-pages, and optimized cart/ checkout experience using Liquid, HTML, CSS, and JavaScript`,
-  features: [
-    "Shopify-based storefront",
-    "Product collections and detail pages",
-    "Responsive design",
-    "Secure checkout integration",
-    "Easy product management"
-  ],
-  image: "https://images.pexels.com/photos/6407773/pexels-photo-6407773.jpeg",
-
-  live_link: "https://techx-shop-bd.myshopify.com",
-  client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
-
-  technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 20,
+    title: "TechX — Shopify Theme",
+    description:
+      "A custom Shopify theme for a tech eCommerce store featuring responsive design, dynamic product pages, and an optimized cart/checkout experience built using Liquid, HTML, CSS, and JavaScript.",
+    features: [
+      "Custom Shopify Liquid theme development",
+      "Dynamic product pages with variant selectors",
+      "Optimized cart and checkout experience",
+      "Fully responsive across mobile and desktop",
+      "Secure checkout integration",
+      "Tech-focused UI with modern styling",
+    ],
+    live_link: "https://techx-shop-bd.myshopify.com",
+    client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
+    image: "https://images.pexels.com/photos/6407773/pexels-photo-6407773.jpeg",
+    technology: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
     teckStack: "Shopify",
-
-}
+  },
+  {
+    id: 21,
+    title: "TechX Shop — Tech & Gadgets Store",
+    description:
+      "A feature-rich, modern eCommerce platform designed for high-end electronics, tech gadgets, and accessories. Built with a focus on high performance, sleek UI, and a seamless shopping experience.",
+    features: [
+      "Dynamic product search and filter system",
+      "Interactive product details with variant selectors",
+      "Responsive cart management and checkout flow",
+      "Sleek gadget showcase with modern hover animations",
+      "Fully responsive design for mobile and desktop",
+      "Admin panel ready for inventory and order tracking",
+    ],
+    live_link: "https://techx-shop.vercel.app/",
+    client_link: "https://github.com/saadafahmed45/techx-shop",
+    image: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg",
+    technology: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB"],
+    teckStack: "mern",
+  },
+  {
+    id: 22,
+    title: "Ravella Perfumes — Premium Perfume Store",
+    description:
+      "An elegant and modern online storefront tailored for boutique, fashion, and lifestyle products. Features an ultra-responsive UI, seamless page transitions, and quick add-to-cart capabilities.",
+    features: [
+      "Curated product collections with category filtering",
+      "Dynamic routing for single product pages",
+      "Interactive mini-cart drawer and order summary",
+      "Optimized images and fast page loading with Next.js",
+      "Clean, minimalist design crafted with Tailwind CSS",
+      "Easy API integration for payment gateways",
+    ],
+    live_link: "https://ravella-perfums.vercel.app/",
+    client_link: "https://github.com/saadafahmed45/aura-cart-ai-powered-ecom-client",
+    image: "https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg",
+    technology: ["Next.js", "React", "Tailwind CSS", "Express.js"],
+    teckStack: "react",
+  },
 ];
