@@ -17,7 +17,7 @@ export const portfolioData = [
     server_link: "https://github.com/saadafahmed45/ira-fashion-server",
     image: "/projects/ira_fasion.jpg",
     technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
-    teckStack: "react",
+    teckStack: "mern",
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ export const portfolioData = [
     client_link: "https://github.com/saadafahmed45/dhaka-jobs-portal",
     image: "/projects/job_portal.jpg",
     technology: ["Next.js", "Tailwind CSS", "Firebase", "Node.js", "MongoDB"],
-    teckStack: "react",
+    teckStack: "mern",
   },
   {
     id: 6,
@@ -276,7 +276,7 @@ export const portfolioData = [
     ],
     live_link: "https://skin-aura-shop.vercel.app/",
     client_link: "https://github.com/saadafahmed45/SkinAura-Ecommerce",
-    image: "https://images.pexels.com/photos/9219004/pexels-photo-9219004.jpeg",
+    image: "projects/skin-aura-demo.png",
     technology: ["Next.js", "Tailwind CSS", "React", "Firebase"],
     teckStack: "react",
   },
@@ -295,7 +295,7 @@ export const portfolioData = [
     ],
     live_link: "https://kicks-ecom-task.vercel.app/",
     client_link: "https://github.com/saadafahmed45/kicks-ecom-task",
-    image: "https://images.pexels.com/photos/3768602/pexels-photo-3768602.jpeg",
+    image: "projects/kick-demo.png",
     technology: ["Next.js", "React", "Tailwind CSS", "Firebase"],
     teckStack: "react",
   },
@@ -356,7 +356,7 @@ export const portfolioData = [
   },
   {
     id: 20,
-    title: "TechX — Shopify Theme",
+    title: "Gedget — Shopify Theme",
     description:
       "A custom Shopify theme for a tech eCommerce store featuring responsive design, dynamic product pages, and an optimized cart/checkout experience built using Liquid, HTML, CSS, and JavaScript.",
     features: [
@@ -388,7 +388,7 @@ export const portfolioData = [
     ],
     live_link: "https://techx-shop.vercel.app/",
     client_link: "https://github.com/saadafahmed45/techx-shop",
-    image: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg",
+    image: "/projects/techxshop-demo.png",
     technology: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB"],
     teckStack: "mern",
   },
@@ -407,8 +407,8 @@ export const portfolioData = [
     ],
     live_link: "https://ravella-perfums.vercel.app/",
     client_link: "https://github.com/saadafahmed45/aura-cart-ai-powered-ecom-client",
-    image: "https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg",
+    image: "/projects/ravella-perfume-demo.png",
     technology: ["Next.js", "React", "Tailwind CSS", "Express.js"],
-    teckStack: "react",
+    teckStack: "mern",
   },
 ];
