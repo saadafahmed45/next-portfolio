@@ -23,8 +23,11 @@ export function ThreeDCardDemo() {
           Hover over this card to unleash the power of CSS perspective
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
-            src="projects/ira_fasion.jpg"
+          <Image
+            src="/projects/ira_fasion.jpg"
+            width={640}
+            height={360}
+            sizes="(max-width: 640px) 100vw, 368px"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />

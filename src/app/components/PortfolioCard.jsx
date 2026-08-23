@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
@@ -18,8 +19,11 @@ const PortfolioCard = ({ data }) => {
     <div className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-1 flex flex-col h-full">
       {/* Image */}
       <div className="relative overflow-hidden aspect-video">
-        <img
+        <Image
           src={data.image}
+          width={640}
+          height={360}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           alt={data.title}
         />

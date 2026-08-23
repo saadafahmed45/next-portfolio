@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -103,8 +104,11 @@ const HeroPage = () => {
           className="flex-1 flex justify-center lg:justify-end"
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-            <img
-              src="profile2.jpeg"
+            <Image
+              src="/profile2.jpeg"
+              fill
+              priority
+              sizes="(max-width: 1024px) 320px, 384px"
               alt="Profile"
               className="w-full h-full object-cover [clip-path:circle(50%)] shadow-lg transition-transform duration-500 ease-in-out hover:scale-105"
             />

@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -29,13 +30,15 @@ export default function AboutPage() {
 
           {/* ── Profile Image ── */}
           <div className="w-full md:w-[42%] flex justify-center" data-aos="fade-right">
-            <div className="relative">
+            <div className="relative h-[360px] w-72 lg:h-[400px] lg:w-80">
               {/* Decorative background blob */}
               <div className="absolute -inset-4 bg-[#3B966A]/10 rounded-3xl -rotate-3 z-0" />
-              <img
-                src="profile.jpg"
+              <Image
+                src="/profile.jpg"
+                fill
+                sizes="(max-width: 768px) 288px, 320px"
                 alt="Mohammad Haolader – Web Developer"
-                className="relative z-10 w-72 lg:w-80 h-auto object-cover rounded-2xl shadow-2xl"
+                className="relative z-10 object-cover rounded-2xl shadow-2xl"
               />
               {/* Experience badge */}
               <div className="absolute -bottom-4 -right-4 z-20 bg-[#3B966A] text-white rounded-2xl px-4 py-3 shadow-xl text-center">

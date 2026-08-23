@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import Image from "next/image";
 import Slider from "react-slick";
 
 const ProductDetails = () => {
@@ -10,6 +11,7 @@ const ProductDetails = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const sliderRef = useRef(null);
 
   const settings = {
     dots: true,
@@ -17,15 +19,18 @@ const ProductDetails = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    beforeChange: (current, next) => setCurrentImageIndex(next),
+    afterChange: (index) => setCurrentImageIndex(index),
   };
   return (
     <div className="product-slider">
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {images.map((img, index) => (
           <div key={index} className="flex justify-center">
-            <img
+            <Image
               src={img}
+              width={800}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 800px"
               alt={`Product image ${index + 1}`}
               className="w-full max-w-lg h-auto"
             />
@@ -36,16 +41,19 @@ const ProductDetails = () => {
       {/* Thumbnails */}
       <div className="flex justify-center mt-4">
         {images.map((img, index) => (
-          <img
+          <Image
             key={index}
             src={img}
+            width={80}
+            height={80}
+            sizes="80px"
             alt={`Thumbnail ${index + 1}`}
             className={`w-20 h-auto mx-2 cursor-pointer border-2 ${
               currentImageIndex === index
                 ? "border-blue-500"
                 : "border-transparent"
             }`}
-            onClick={() => setCurrentImageIndex(index)}
+            onClick={() => sliderRef.current?.slickGoTo(index)}
           />
         ))}
       </div>

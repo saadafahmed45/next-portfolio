@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ExternalLink,
@@ -13,8 +13,6 @@ import {
   ChevronRight,
   Home,
 } from "lucide-react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { portfolioData } from "@/app/api/portfolioData";
 import PortfolioCard from "@/app/components/PortfolioCard";
 
@@ -63,13 +61,9 @@ const defaultMeta = {
   border:   "border-green-200",
 };
 
-const PortfolioDetails = ({ params }) => {
-  const { id }    = params;
+const PortfolioDetails = async ({ params }) => {
+  const { id }    = await params;
   const project   = portfolioData.find((proj) => proj.id === parseInt(id));
-
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true, easing: "ease-out-cubic" });
-  }, []);
 
   /* ── 404 ── */
   if (!project) {
@@ -183,8 +177,12 @@ const PortfolioDetails = ({ params }) => {
 
             {/* Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-gray-200">
-              <img
+              <Image
                 src={project.image}
+                width={800}
+                height={450}
+                priority
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 alt={project.title}
                 className="w-full object-cover aspect-video"
               />

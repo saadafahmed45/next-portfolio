@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 const CardHover = () => {
   const imageRef = useRef(null);
@@ -26,9 +27,11 @@ const CardHover = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img
+      <Image
         ref={imageRef}
-        src="/projects/test.png"
+        src="/projects/ira_fasion.jpg"
+        width={640}
+        height={640}
         alt="Scrolling Image"
         className="w-full h-auto"
       />

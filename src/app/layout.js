@@ -36,7 +36,7 @@ export const viewport = "width=device-width, initial-scale=1.0";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased primary_bg_color`}
       >
