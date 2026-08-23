@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { getProjectSlug } from "../api/portfolioData";
 
 const stackBadgeColors = {
   react:   "bg-green-50  text-[#3B966A] border border-green-200",
@@ -34,7 +35,7 @@ const PortfolioCard = ({ data }) => {
         {/* Quick view */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <Link
-            href={`/portfolio/${data.id}`}
+            href={`/portfolio/${getProjectSlug(data)}`}
             className="flex items-center gap-2 bg-white text-slate-900 font-semibold py-2.5 px-5 rounded-full shadow-lg hover:bg-[#3B966A] hover:text-white transition-all duration-200 text-sm"
           >
             <span>View Details</span>
@@ -118,7 +119,7 @@ const PortfolioCard = ({ data }) => {
             )}
 
           <Link
-            href={`/portfolio/${data.id}`}
+            href={`/portfolio/${getProjectSlug(data)}`}
             className="ml-auto flex items-center gap-1 text-xs font-semibold text-slate-400 hover:text-[#3B966A] transition-colors"
           >
             Details <ArrowUpRight size={12} />

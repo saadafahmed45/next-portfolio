@@ -13,7 +13,7 @@ import {
   ChevronRight,
   Home,
 } from "lucide-react";
-import { portfolioData } from "@/app/api/portfolioData";
+import { getProjectSlug, portfolioData } from "@/app/api/portfolioData";
 import PortfolioCard from "@/app/components/PortfolioCard";
 
 /* ─── brand color tokens ─────────────────────────────────── */
@@ -62,8 +62,13 @@ const defaultMeta = {
 };
 
 const PortfolioDetails = async ({ params }) => {
-  const { id }    = await params;
-  const project   = portfolioData.find((proj) => proj.id === parseInt(id));
+  const { id } = await params;
+  const projectKey = decodeURIComponent(id || "").toLowerCase();
+  const project = portfolioData.find(
+    (proj) =>
+      getProjectSlug(proj) === projectKey ||
+      String(proj.id) === projectKey
+  );
 
   /* ── 404 ── */
   if (!project) {
@@ -334,7 +339,7 @@ const PortfolioDetails = async ({ params }) => {
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up">
             {prevProject ? (
               <Link
-                href={`/portfolio/${prevProject.id}`}
+                href={`/portfolio/${getProjectSlug(prevProject)}`}
                 className="group flex items-center gap-4 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#3B966A]/30 transition-all"
               >
                 <div className="shrink-0 w-10 h-10 rounded-full bg-gray-100 group-hover:bg-green-50 flex items-center justify-center transition-colors">
@@ -351,7 +356,7 @@ const PortfolioDetails = async ({ params }) => {
 
             {nextProject && (
               <Link
-                href={`/portfolio/${nextProject.id}`}
+                href={`/portfolio/${getProjectSlug(nextProject)}`}
                 className="group flex items-center justify-end gap-4 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#3B966A]/30 transition-all text-right"
               >
                 <div className="overflow-hidden">

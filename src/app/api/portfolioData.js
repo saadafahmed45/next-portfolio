@@ -1,3 +1,10 @@
+export const getProjectSlug = (project) =>
+  project.title
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
 export const portfolioData = [
   {
     id: 1,

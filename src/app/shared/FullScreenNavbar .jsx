@@ -103,7 +103,7 @@ const FullScreenNavbar = () => {
           {/* ── Desktop CTA ── */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://drive.google.com/file/d/1k7jJCwRzQzfRQDp5qLLVDtrM900j_BVV/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1y_okdy1_ZLvnAP3H_5qLIEMzPClyK1zp/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-5 py-2 text-sm font-semibold text-white bg-[#3B966A] rounded-full shadow-sm hover:bg-[#2d7554] hover:shadow-md hover:scale-105 transition-all duration-200"
@@ -206,7 +206,7 @@ const FullScreenNavbar = () => {
             {/* Drawer CTA */}
             <div className="px-6 pb-8 border-t border-gray-200 pt-6 space-y-3">
               <a
-                href="https://drive.google.com/file/d/1k7jJCwRzQzfRQDp5qLLVDtrM900j_BVV/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1y_okdy1_ZLvnAP3H_5qLIEMzPClyK1zp/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 bg-[#3B966A] text-white font-semibold rounded-xl hover:bg-[#2d7554] transition-all text-sm shadow-md"
